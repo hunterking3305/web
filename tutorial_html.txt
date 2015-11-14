@@ -1,0 +1,43 @@
+HTML Attributes：
+Attributes are always specified in the start tag
+Attributes come in name/value pairs like: name="value"
+Attributes provide additional information about HTML elements.
+------------------------------------------------------------------------------------------
+html.<img>.alt屬性
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+當圖示無法正常顯示時會跳出W3Schools.com錯誤信息
+------------------------------------------------------------------------------------------
+html.<p>.title屬性
+<p title="About W3Schools">W3Schools is a web developer's site.</p>
+當滑鼠遊標移到那個文章段落時，會顯示About W3Schools信息
+------------------------------------------------------------------------------------------
+html.<input>.disabled屬性
+<input type="text" disabled>
+無法輸入任何text
+------------------------------------------------------------------------------------------
+html.<任何相關文字標籤>.style屬性
+<p style="color:red">This is a paragraph.</p>
+Changing the default style of an HTML element, can be done with the style attribute.
+------------------------------------------------------------------------------------------
+html.<th>.rowspan屬性
+<tr>
+    <th rowspan="2">Telephone:</th>
+    <td>555 77 854</td>
+</tr>
+合併上下2個rows
+------------------------------------------------------------------------------------------
+html.<th>.colspan屬性
+<tr>
+	<th>Name</th>
+    <th colspan="2">Telephone</th>
+</tr>
+合併左右2個columns
+------------------------------------------------------------------------------------------
+html.<任何標籤>.name屬性
+與ID相似，但是ID不可以重複，name可以重複
+------------------------------------------------------------------------------------------
+html.<a>.target屬性
+<iframe src="http://www.google.com" name="iframe_a"></iframe>
+<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+通常會搭配iframe使用，表示點擊a標籤內的網址w3school，target將會使網頁呈現在iframe內。
+------------------------------------------------------------------------------------------

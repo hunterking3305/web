@@ -1,0 +1,368 @@
+HTML Elements
+<img>
+HTML images are defined with the <img> tag.
+
+<h1></h1>
+The <h1> element defines a heading.
+
+<p></p>
+The <p> element defines a paragraph.
+
+<br>
+The <br> tag defines a line break. #換行
+
+<hr>
+The <hr> tag creates a horizontal line in an HTML page.
+
+<pre></pre>
+包在<pre></pre>中的文通常會保留空格和換行符號
+
+
+--------------------------------------------------------------------------------
+HTML Head
+
+The HTML <head> Element：
+The HTML <head> element has nothing to do with HTML headings.
+The HTML <head> element contains meta data. Meta data are not displayed.
+The HTML <head> element is placed between the <html> tag and the <body> tag
+<style> element is used to define internal CSS style sheets.
+<link> element is used to define external CSS style sheets.
+<meta> element is also meta data.
+<title></title> element defines the HTML document's title.
+
+EX:
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="10">      #每content="10"秒會refresh一次
+	<link rel="stylesheet" href="mystyle.css">    #外部定義css屬性 或 其他外部source
+	<title>My First HTML</title>                  #在browser上的標題
+	<style>                                       #內部定義css屬性
+		body {background-color:yellow;}
+		p {color:blue;}
+	</style>
+</head>
+-----------------------------------------------------------------
+style屬性系列
+
+Change Background Color：(background-color)
+ex:<body style="background-color:yellow">
+
+Change Text Color：(color)
+ex:<p style="color:red">This is a paragraph.</p>
+
+Change Text Fonts：(font-family)
+ex:<h1 style="font-family:verdana">This is a heading</h1>
+
+Change Text Size：(font-size)
+ex:<p style="font-size:160%">This is a paragraph.</p>
+ex:<p style="font-size:50px">This is a paragraph.</p>
+
+Change Text Alignment：(text-align)
+ex:<h1 style="text-align:[left][center置中][right]">Centered Heading</h1>
+
+補充字型：Tahoma、verdana、courier
+-----------------------------------------------------------------
+預設文字格式
+
+<b></b>粗體1
+<strong></<strong>粗體2
+ex：<p><b>This text is bold</b>.</p>
+<p><strong>This text is strong</strong>.</p>
+
+<i></i>斜體1
+<em></em>斜體2
+ex：<p><i>This text is italic</i>.</p>
+ex：<p><em>This text is emphasized</em>.</p>
+
+<small></small>縮小字體格式
+ex：<h2>HTML <small>Small</small> Formatting</h2>
+
+<mark></mark>  marker
+ex：<h2>HTML <mark>Marked</mark> Formatting</h2>
+
+<del></del> 劃線刪除字體格式(strikeout) 
+ex：<p>My favorite color is <del>blue</del> red.</p>
+
+<ins></ins> 底線
+ex：<p>My favorite <ins>color</ins> is red.</p>
+
+<sub></sub> 文字下標
+ex：<p>This is <sub>subscripted</sub> text.</p>
+
+<sup><sup> 文字上標
+ex：<p>This is <sup>superscripted</sup> text.</p>
+-----------------------------------------------------------------
+引用文字Quotation
+
+<q></q> 短引用
+ex：<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<blockquote></blockquote> 長引用
+ex：<blockquote>For 50 years, WWF...</blockquote>
+
+<abbr></abbr>  縮寫(如WHO縮寫，如果游標移過去即會顯示全形字句)
+ex：<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<cite></cite> 引用的一種(以italic表現，相似italic)
+ex：<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+-------------------------------------------------------------------------
+HTML Comment Tags(註解)
+
+Ex:
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Remember to add more information here -->
+-------------------------------------------------------------------------
+Styling HTML with CSS
+
+Styling can be added to HTML elements in 3 ways:
+1.Inline - using a style attribute in HTML elements
+2.Internal - using a <style> element in the HTML <head> section
+Ex:
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {background-color:lightgrey;font-family:courier}
+		h1   {color:blue}
+		p    {color:green}
+	</style>
+</head>
+<body>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+</body>
+</html>
+
+3.External - using one or more external CSS files
+Ex:
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+</body>
+</html>
+--------------------------------------------------------------
+link 系列
+
+target = "_blank" (連結開分頁)
+Ex: <a href="http://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+css的屬性text-decoration (去除連結底線)
+Ex:<a href="html_images.asp" target="_blank" style="text-decoration:none">HTML Images</a>
+
+HTML Links - Image as Link(圖示連結)
+Ex:
+<a href="default.asp">
+	<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+</a>
+
+HTML Links - Create a Bookmark(網頁書籤)
+如果網頁太長的話，可以使用網頁的書籤來做網頁的上下滾動
+Ex:
+<h2 id="tips">Useful Tips Section</h2>             #被指定的目標
+<a href="#tips">Visit the Useful Tips Section</a>  #跳去指定id的那個部分
+
+--------------------------------------------------------------
+image 系列
+
+Images on Another Server 圖片來源在網路伺服器上
+Ex:<img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+Image Floating 圖片懸浮可移至左右位置(css的屬性)
+floating:right; floating:left; 
+Ex:
+<p>
+	<img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">The image will float to the right of the text.
+</p>
+<p>
+	<img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">The image will float to the left of the text.
+</p>
+-------------------------------------------------------------------------
+Image Maps(等待深入研究):html_image的那一個課程
+
+-------------------------------------------------------------------------
+HTML Tables
+
+<tr></tr>
+Tables are divided into table rows with the <tr> tag.
+
+<th></th>
+Table headings are defined with the <th> tag.
+
+<td></td>
+Table rows are divided into table data with the <td> tag.
+
+<caption></caption>
+Use the HTML <caption> element to define a table caption
+
+Use the colspan attribute to make a cell span many columns
+Use the rowspan attribute to make a cell span many rows
+
+table結構：                ________________
+<tr>                     |__a_|__b__|__c__|
+	<th>a</th>           |                |
+	<th>b</th>           |                |
+	<th>c</th>           |________________|
+</tr>
+
+                          ________________
+<tr>                     |________________|
+	<th>s</th>           |__s_|__m__|__l__|
+	<th>m</th>           |                |
+	<th>l</th>           |________________|
+</tr>
+
+css 的 style屬性 An HTML Table with Collapsed Borders
+border-collapse: [collapse] [separate];  #分別為預設值，邊框彼此間分開與邊框合併為單一邊框
+Ex: <th style="border-collapse:collapse">s</th>
+-----------------------------------------------------------------------------------
+list 系列
+--Unordered HTML Lists--
+
+<ul></ul>
+An unordered list starts with the <ul> tag.
+
+<li></li>
+Each list item starts with the <li> tag.
+
+list清單 css 的 style屬性
+list-style-type:disc(黑點圖，沒有排序的清單，每一列前的符號圖示)
+list-style-type:circle(圈圈圖，沒有排序的清單，每一列前的符號圖示)
+list-style-type:square(方形圖，沒有排序的清單，每一列前的符號圖示)
+list-style-type:none(無圖，沒有排序的清單，每一列前的符號圖示)
+
+Ex:
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+--Ordered HTML Lists--
+
+<ol></ol>
+An unordered list starts with the <ol> tag.
+
+<li></li>
+Each list item starts with the <li> tag.
+
+排序清單，每一列前的符號
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"    The list items will be numbered with lowercase roman numbers
+
+Ex:
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+--A Description List--
+
+<dl></dl>
+The <dl> tag defines the description list
+
+<dt></dt>
+<dt> tag defines the term (name)
+
+<dd></dd>
+the <dd> tag describes each term
+
+Ex:
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+--Horizontal Lists--
+css 的 style屬性
+display:inline  #list 清單排成一直線顯示
+
+Ex:
+<ul>
+  <li style="display:inline">Coffee</li>
+  <li style="display:inline">Tea</li>
+  <li style="display:inline">Milk</li>
+</ul>  
+-----------------------------------------------------------------------------------
+HTML Block and Inline Elements (Block & Inline 的元素)
+
+Examples of block-level elements:
+<div>
+<h1> - <h6>
+<p>
+<form>
+
+Examples of inline elements:
+<span>
+<a>
+<img>
+-----------------------------------------------------------------------------------
+HTML Layouts (待研究)
+-----------------------------------------------------------------------------------
+HTML Responsive Web Design (待研究)
+-----------------------------------------------------------------------------------
+HTML Iframes (網頁中裡再呈現網頁)
+
+<iframe></iframe> 
+Ex: <iframe src="demo_iframe.htm" width="200" height="200"></iframe>
+如過要去掉border，code如下：
+Ex: <iframe src="demo_iframe.htm" width="200" height="200" style="border:none"></iframe>
+-----------------------------------------------------------------------------------
+HTML Scripts
+
+The HTML <script> Tag
+Ex: <script>document.getElementById("demo").innerHTML = "Hello JavaScript!";</script>
+html中選取id為"demo"的標籤，顯示文字Hello JavaScript!
+
+在html裡用javascript製作回首頁鍵:
+<input type ="button" onclick="javascript:location.href='http://www.google.com'" value="回到google首頁"></input>
+onclick 的時候，用JavaScript 的 location.href 語法
+
+在html做JavaScript innerHTML的function：
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo">This is a demonstration.</p>
+<script>
+	function myFunction() { 
+		document.getElementById("demo").innerHTML = "Hello JavaScript!";
+	}
+</script>
+
+在html中做JavaScript來change HTML styles:
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+<script>
+	function myFunction() {
+		document.getElementById("demo").style.fontSize = "25px"; 
+	}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+在html中做JavaScript來change HTML attributes:
+<script>
+	function light(sw) {
+		var pic;
+		if (sw == 0) {
+			pic = "pic_bulboff.gif"
+		} else {
+			pic = "pic_bulbon.gif"
+		}
+		document.getElementById('myImage').src = pic;
+	}
+</script>
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+-----------------------------------------------------------------------------------
