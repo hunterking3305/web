@@ -32,7 +32,7 @@ The HTML <head> element is placed between the <html> tag and the <body> tag
 
 EX:
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8">                        #UTF-8 (Unicode) 支援幾乎所有文字符號
 	<meta http-equiv="refresh" content="10">      #每content="10"秒會refresh一次
 	<link rel="stylesheet" href="mystyle.css">    #外部定義css屬性 或 其他外部source
 	<title>My First HTML</title>                  #在browser上的標題
@@ -365,4 +365,14 @@ onclick 的時候，用JavaScript 的 location.href 語法
 <button type="button" onclick="light(1)">Light On</button>
 <button type="button" onclick="light(0)">Light Off</button>
 </p>
+-----------------------------------------------------------------------------------
+HTML Entities & HTML Symbols(特殊符號字元)
+
+To add these symbols to an HTML page, you can use an HTML entity name.
+
+< &lt; | > &gt; | & &amp; | ¢ &cent; | £ &pound; | ¥ &yen; | € &euro; | © &copy; | ® &reg; | ∑ &sum; | Δ &Delta; | ™ &trade; | ← &larr; | ↑ &uarr; | → &rarr; | ↓ &darr;
+-----------------------------------------------------------------------------------
+HTML Uniform Resource Locators (URL)
+
+A URL can be composed of words (w3schools.com), or an Internet Protocol (IP) address (192.68.20.50).
 -----------------------------------------------------------------------------------
