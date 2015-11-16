@@ -41,3 +41,11 @@ html.<a>.target屬性
 <p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 通常會搭配iframe使用，表示點擊a標籤內的網址w3school，target將會使網頁呈現在iframe內。
 ------------------------------------------------------------------------------------------
+html.<form>.action 屬性
+<form action="action_page.html">
+<input type="text" name="firstname" value="Mickey">
+</form>
+action屬性會將input標籤內的value值 Mickey 傳到action_page.html文件的url上
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------

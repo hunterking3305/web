@@ -376,3 +376,12 @@ HTML Uniform Resource Locators (URL)
 
 A URL can be composed of words (w3schools.com), or an Internet Protocol (IP) address (192.68.20.50).
 -----------------------------------------------------------------------------------
+HTML Forms
+
+<form>...</form>
+<input> 有三種type：
+(1) <input type="text" name="firstname">                                     #輸入類型的表格
+(2) <input type="radio" name="sex" value="male" checked>Male                 #勾選類型的表格
+(3) <input type="submit" name="按鈕名稱" value="按鈕值" style="按鈕樣式">    #表單送出的按鈕
+
+-----------------------------------------------------------------------------------
