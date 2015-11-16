@@ -380,8 +380,51 @@ HTML Forms
 
 <form>...</form>
 <input> 有三種type：
-(1) <input type="text" name="firstname">                                     #輸入類型的表格
-(2) <input type="radio" name="sex" value="male" checked>Male                 #勾選類型的表格
-(3) <input type="submit" name="按鈕名稱" value="按鈕值" style="按鈕樣式">    #表單送出的按鈕
+(1) <input type="text" name="firstname">                                  #輸入一行文字的類型
+(2) <input type="radio" name="sex" value="male" checked>Male              #勾選類型的表格
+(3) <input type="submit" name="按鈕名稱" value="按鈕值" style="按鈕樣式"> #表單送出的按鈕
 
+<fieldset></fieldset>
+The <fieldset> element groups related data in a form.
+<legend></legend>
+The <legend> element defines a caption for the <fieldset> element.
+Ex:
+<form action="action_page.php">
+	<fieldset>
+		<legend>Personal information:</legend>
+		First name:<br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>
+
+<select><option>...</option></select> 下拉式選單Drop-Down List
+Ex:
+<form action="action_page.php">
+	<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi">Audi</option>
+	</select>
+</form>
+
+<textarea></textarea> 多行文字輸入區塊multi-line input field
+Ex:
+<form action="action_page.php">
+	<textarea name="message" rows="10" cols="30">
+		The cat was playing in the garden.
+	</textarea>
+	<br><br>
+	<input type="submit">
+</form>
+
+<button></button> 按鈕功能
+<form>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form>
 -----------------------------------------------------------------------------------

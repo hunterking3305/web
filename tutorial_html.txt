@@ -45,7 +45,18 @@ html.<form>.action 屬性
 <form action="action_page.html">
 <input type="text" name="firstname" value="Mickey">
 </form>
-action屬性會將input標籤內的value值 Mickey 傳到action_page.html文件的url上
+action屬性會將input標籤內的value值Mickey傳到action_page.html文件的url上，通常會與submit一起使用
 ------------------------------------------------------------------------------------------
-
+html.<form>.outout 屬性
+<form action="action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	0
+	<input type="range" id="a" name="a" value="50">
+	100 +
+	<input type="number" id="b" name="b" value="50">
+	=
+	<output name="x" for="a b"></output>
+	<br><br>
+	<input type="submit">
+</form>
+常用在數學計算的呈現。
 ------------------------------------------------------------------------------------------
