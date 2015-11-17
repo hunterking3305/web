@@ -60,3 +60,32 @@ html.<form>.outout 屬性
 </form>
 常用在數學計算的呈現。
 ------------------------------------------------------------------------------------------
+html.<input>.readonly 屬性
+<form>
+	<input type="text" name="firstname" value="John" readonly>
+</form>
+在input標籤內不能做任何修改
+------------------------------------------------------------------------------------------
+html.<input>.disabled 屬性
+<form>
+	<input type="text" name="firstname" value="John" disabled>
+</form>
+在input標籤內不能做任何修改，且背景色會反白，如有submit鍵也無法傳遞訊息。
+------------------------------------------------------------------------------------------
+html.<input>.size 屬性
+<form>
+	<input type="text" name="firstname" value="John" size="20">
+</form>
+最少要輸入20個字元
+------------------------------------------------------------------------------------------
+html.<input>.maxlength 屬性
+<form>
+	<input type="text" name="firstname" value="John" maxlength="10">
+</form>
+上限只能輸入10字元
+------------------------------------------------------------------------------------------
+html.<input>.placeholder 屬性
+<form>
+	<input type="text" name="fname" placeholder="First name">
+</form>
+The placeholder attribute specifies a hint that describes the expected value of an input field.(he hint is displayed in the input field before the user enters a value.)
