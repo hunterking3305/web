@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>object_KVpair</title>
+	</HEAD>
+	<BODY>
+		<p>Creating a JavaScript Object.</p>
+		<p id="demo"></p>
+		<p id="demo2"></p>
+		<script>
+			var person = {
+				firstName:"John",
+				lastName:"Doe",
+				age:35,
+				eyecolor:"blue",
+				fullName:function(){
+					return this.firstName + " " + this.lastName;
+				}
+			};
+			function myFunction(){
+				document.getElementById('demo').innerHTML =
+				person.firstName + " is " + person["age"] + " years old.";
+			}
+			myFunction();
+			
+			document.getElementById('demo2').innerHTML = person.fullName();
+		</script>
+	</BODY>
+</HTML>

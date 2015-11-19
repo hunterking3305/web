@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>function</title>
+	</HEAD>
+	<BODY>
+		<!-- Function Return -->
+		<p>This example calls a function which performs a calculation, and returns the result:</p>
+		<p id="demo"></p>
+		<script>
+			function myFunction(a,b){
+				return a * b
+			}
+			document.getElementById('demo').innerHTML = myFunction(5,5)
+		</script>
+		
+		<!-- Functions Used as Variables -->
+		<p id="demo2"></p>
+		<script>
+			var text;
+			
+			function toCelsius(f){
+				return(9/5) * (f - 32)
+			}
+			text = "The tempetature is " + toCelsius(32) + " Celsius !";
+			document.getElementById('demo2').innerHTML = text;
+			
+		</script>
+	</BODY>
+</HTML>

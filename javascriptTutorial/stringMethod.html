@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>String Method</title>
+	</HEAD>
+	<BODY>
+	<!-- String indexOf Method -->
+		<p id="p1">Please locate where 'locate' occurs!.</p>
+		<button onclick="indexOf()">button1</button>
+		<p id="demo1"></p>
+		
+		<script>
+			function indexOf(){
+				var str1 = document.getElementById("p1").innerHTML;
+				var post1 = str1.indexOf("w");
+				document.getElementById("demo1").innerHTML = post1;
+			}
+		</script>
+		
+	<!-- String slice Method [slice(start, end)]-->
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+		
+		<script>
+			var str = "Apple, Banana, Kiwi";
+			document.getElementById("demo2").innerHTML = str.slice(7,13);
+			document.getElementById("demo3").innerHTML = str.slice(7);
+		</script>
+		
+	<!-- String slice Method [substr(start, length)] -->
+		<p id="demo4"></p>
+
+		<script>
+			var str = "Apple, Banana, Kiwi";
+			document.getElementById("demo4").innerHTML = str.substr(7,6);
+		</script>
+	</BODY>
+</HTML>

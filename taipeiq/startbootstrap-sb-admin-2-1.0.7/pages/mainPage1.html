@@ -8,7 +8,7 @@
 		<meta name="author" content="">
 		
 		<!-- Bootstrap Core CSS -->
-		<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
 		<!-- MetisMenu CSS -->
 		<link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 		
 		<link rel="stylesheet" href="">
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<script src="./js/mapAPI.js"></script>
+		<script src="../../js/mapAPI.js"></script>
 		<title>Main Page</title>
 		<style>
 			div#logo{
@@ -48,9 +48,10 @@
 			div#dashboard{
 				width:300px;
 				height:490px;
-				border:1px solid black;
-				margin:10px 20px;
-				float:right;
+				border:3px solid gray;
+				margin-top:120px;
+				margin-left:935px;
+				float:center;
 			}
 		</style>
 	</HEAD>
@@ -65,8 +66,8 @@
 			<div id = "qmap">
 			
 			</div>
-			<div id="dashboard">
-				<div class="navbar-default sidebar" role="navigation">
+			
+				<div id="dashboard" class="navbar-default sidebar" role="navigation">
 					<div class="sidebar-nav navbar-collapse">
 						<ul class="nav" id="side-menu">
 							<li class="sidebar-search">
@@ -83,40 +84,35 @@
 							<li>
 								<a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
 								<ul class="nav nav-second-level">
-									<li>
-										<a href="panels-wells.html">Panels and Wells</a>
-									</li>
-									<li>
-										<a href="buttons.html">Buttons</a>
-									</li>
-									<li>
-										<a href="notifications.html">Notifications</a>
-									</li>
+									<form style="text-align:center">
+										跑步<input type="checkbox" name="checkbox1" value="checkbox">  
+										打球<input type="checkbox" name="checkbox2" value="checkbox">  
+										登山<input type="checkbox" name="checkbox3" value="checkbox">  
+										健美<input type="checkbox" name="checkbox4" value="checkbox"> <br>
+									</form>
 								</ul>
 							</li>
 							<li>
 								<a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
 								<ul class="nav nav-second-level">
-									<li>
-										<a href="#">Second Level Item</a>
-									</li>
-									<li>
-										<a href="#">Second Level Item</a>
-									</li>
-									<li>
-										<a href="#">Second Level Item</a>
-									</li>
+									<form style="text-align:center">
+										跑步<input type="checkbox" name="checkbox1" value="checkbox">  
+										打球<input type="checkbox" name="checkbox2" value="checkbox">  
+										登山<input type="checkbox" name="checkbox3" value="checkbox">  
+										健美<input type="checkbox" name="checkbox4" value="checkbox"> <br>
+									</form>
 								</ul>
 							</li>
+							
 							<li class="active">
 							<a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
 								<ul class="nav nav-second-level">
-									<li>
-										<a class="active" href="blank.html">Blank Page</a>
-									</li>
-									<li>
-										<a href="login.html">Login Page</a>
-									</li>
+									<form style="text-align:center">
+										跑步<input type="checkbox" name="checkbox1" value="checkbox">  
+										打球<input type="checkbox" name="checkbox2" value="checkbox">  
+										登山<input type="checkbox" name="checkbox3" value="checkbox">  
+										健美<input type="checkbox" name="checkbox4" value="checkbox"> <br>
+									</form>
 								</ul>
 							</li>
 							<li>
@@ -131,7 +127,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			
 		</div>
 		<!-- /#wrapper -->
 

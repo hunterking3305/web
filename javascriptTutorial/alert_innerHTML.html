@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>alert & innerHTML</title>
+	</HEAD>
+	<BODY>
+		<!-- Using window.alert() -->
+		<h1>Alert page</h1>
+		<script>
+			window.alert("You have to pay $ " + (50 + 60));
+		</script>
+		
+		<!-- Using innerHTML -->
+		<p id="demo"></p>
+		<script>
+			document.getElementById("demo").innerHTML = 50 + 60;
+		</script>
+	</BODY>
+</HTML>

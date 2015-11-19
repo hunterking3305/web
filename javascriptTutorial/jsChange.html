@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>position</title>
+	</HEAD>
+	<BODY>
+	<!-- JavaScript Can Change HTML Content -->
+		<h1>What can Javascript Do?</h1>
+		<p id="demo">JavaScript can change HTML content.</p>
+		<button type="button" onclick="document.getElementById('demo').innerHTML='Hello Javascript'">Click Me!</button>
+		
+	<!-- JavaScript Can Change HTML Attributes -->
+		<h1>JavaScript Can Change Images</h1>
+		<img id="myImage" src="imgs/pic_bulboff.gif" onclick="changeImg()" width="100" height="180">
+		<p>Click the light bulb to turn on/off the light.</p>
+		<script>
+			function changeImg(){
+				var image = document.getElementById('myImage');
+				if(image.src.match("bulbon")){
+					image.src = "imgs/pic_bulboff.gif";
+				}else{
+					image.src = "imgs/pic_bulbon.gif";
+				}
+			}
+		</script>
+		
+		<!-- JavaScript Can Change HTML Styles (CSS) -->
+		<h1>What can Javascript Do?</h1>
+		<p id="demo2">JavaScript can change the style of an HTML element.</p>
+		<button type="button" onclick="changeStyle()">Click Me!</button>
+		<script>
+			function changeStyle(){
+				var phrase = document.getElementById("demo2");
+				phrase.style.fontSize = "30px";
+				phrase.style.color = "red";
+			}
+		</script>
+		
+		<!-- JavaScript Can Validate Data -->
+		<h1>JavaScript Can Validate Input</h1>
+		<p>Please input a number between 1 and 10:</p>
+		<input id="numb" type="number">
+		<button type="button" onclick="mySubmit()">Submit</button>
+		<p id="demo3"></p>
+		
+		<script>
+			function mySubmit(){
+				var number1, text;
+				number1 = document.getElementById('numb').value;
+				
+				if(isNaN(number1) || number1 < 1 || number1 > 10){
+					text = "Input not valid";
+				}else{
+					text = "Input is OK!";
+				}
+				document.getElementById('demo3').innerHTML = text;
+			}
+		</script>
+	</BODY>
+</HTML>
