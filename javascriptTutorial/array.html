@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>Array</title>
+	</HEAD>
+	<BODY>
+	<!-- Arrays to Strings -->
+		<p>fruits = ["Banana", "Orange", "Apple", "Mango"]</p>
+		<p id="demo"></p>
+		<p>----------------------------------------------------------</p>
+		<script>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo").innerHTML = fruits.toString();
+		</script>
+		
+	<!-- join method -->
+		<p>fruits = ["Banana", "Orange", "Apple", "Mango"]</p>
+		<p id="demo1"></p>
+		<p>---------------------------------------------------------</p>
+		
+		<script>
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo1").innerHTML = fruits.join("&");
+		</script>
+		
+	<!-- sorting method -->
+		<button onclick="mySort()">try it</button>
+		<p id="demo2"></p>
+		
+		<script>
+			var friuts = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo2").innerHTML = friuts.toString();
+			function mySort(){
+				friuts.sort();
+				<!-- friuts.reverse(); -->
+				document.getElementById("demo2").innerHTML = friuts;
+			}
+		</script>
+	</BODY>
+</HTML>
