@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>math</title>
+	</HEAD>
+	<BODY>
+	<!-- Math random -->
+		<button onclick="random()">Try it</button>
+		<p id="demo"></p>
+		
+		<script>
+			function random(){
+				document.getElementById("demo").innerHTML = Math.random()
+			}
+		</script>
+		
+	<!-- Max and Min -->
+		<p>-----------------------------------------------</p>
+		<button onclick="max()">max</button>
+		<button onclick="min()">min</button>
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		
+		<script>
+			function max(){
+				document.getElementById("demo1").innerHTML = Math.max(10,22,65,78,110,484,16,284,8);
+			}
+			function min(){
+				document.getElementById("demo2").innerHTML = Math.min(10,22,65,78,110,484,16,284,8);
+			}
+		</script>
+		
+	<!-- Math round 四捨五入 -->
+		<p>-----------------------------------------------</p>
+		<button onclick="round()">round</button>
+		<a> 8.7 become </a><a id="demo3"></a>
+		
+		<script>
+			function round(){
+				document.getElementById("demo3").innerHTML = Math.round(8.7);
+			}
+		</script>
+	</BODY>
+</HTML>

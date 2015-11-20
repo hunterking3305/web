@@ -21,21 +21,65 @@
 		</script>
 		
 	<!-- String slice Method [slice(start, end)]-->
+		<p>Apple, Banana, Kiwi</p>
+		<p>《Slice Method》</p>
 		<p id="demo2"></p>
 		<p id="demo3"></p>
+		<p>-------------------------------------</p>
 		
 		<script>
-			var str = "Apple, Banana, Kiwi";
-			document.getElementById("demo2").innerHTML = str.slice(7,13);
-			document.getElementById("demo3").innerHTML = str.slice(7);
+			var str2 = "Apple, Banana, Kiwi";
+			document.getElementById("demo2").innerHTML = str2.slice(7,13);
+			document.getElementById("demo3").innerHTML = str2.slice(7);
 		</script>
 		
 	<!-- String slice Method [substr(start, length)] -->
+		<p>《Substr Method》</p>
 		<p id="demo4"></p>
+		<p>-------------------------------------</p>
 
 		<script>
-			var str = "Apple, Banana, Kiwi";
-			document.getElementById("demo4").innerHTML = str.substr(7,6);
+			var str2 = "Apple, Banana, Kiwi";
+			document.getElementById("demo4").innerHTML = str2.substr(7,6);
+		</script>
+		
+	<!-- String replace Method [replace(old , new)] -->
+		<p>《Replace Method》</p>
+		<p id="demo5"> Please visit Microsoft!</p>
+		<button onclick="myReplace()">replace</button>
+		<script>
+			function myReplace(){
+				var str3 = document.getElementById("demo5").innerHTML;
+				var post2 = str3.replace("Microsoft", "W3School");
+				document.getElementById("demo5").innerHTML = post2;
+			}
+		</script>
+		 
+	<!-- String Upper and Lower Case Method -->
+		<p id="demo6">Hello World!</p>
+		<p id="demo7">Hello World!</p>
+		<button onclick="myUpper()">Upper</button>
+		<button onclick="myLower()">Lower</button>
+		<p>------------------------------------------------</p>
+		
+		<script>
+			function myUpper(){
+				var text1 = document.getElementById("demo6").innerHTML;
+				document.getElementById("demo6").innerHTML = text1.toUpperCase();
+			}
+			function myLower(){
+				var text2 = document.getElementById("demo7").innerHTML;
+				document.getElementById("demo7").innerHTML = text2.toLowerCase()
+			}
+		</script>
+		
+	<!-- String Concat Method [concat("連接處","String")] -->
+		<p id="demo8"></p>
+		
+		<script>
+			var str4 = "Good";
+			var str5 = "Job";
+			document.getElementById("demo8").innerHTML = str4.concat(" ",str5);
 		</script>
 	</BODY>
 </HTML>
