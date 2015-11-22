@@ -1,0 +1,101 @@
+#big_pic{
+	width:100%;
+	height:600px;
+	/* border:1px solid black; */
+	position:absolute;
+	top:0;
+	left:0;
+}
+header{
+	width:100%;
+	height:50px;
+	background-color:gray;
+	opacity:0.2;
+}
+#logo{
+	width:120px;
+	height:40px;
+	position:absolute;
+	top:5px;
+	left:8px;
+	background-color:blue;
+}
+#selectors{
+	width:100%;
+	height:120px;
+	/* background-color:gray;
+	opacity:0.3; */
+}
+#search_bar{
+	width:350px;
+	height:30px;
+	background-color:blue;
+	float:left;
+	margin-top:45px;
+	margin-left:40px;
+}
+#keying{
+	width:320px;
+	height:30px;
+	
+}
+#search_icon{
+	width:30px;
+	height:30px;
+	background-color:yellow;
+	float:right;
+}
+#order_bar{
+	width:607px;
+	height:90px;
+	/* background-color:blue; */
+	float:left;
+	margin-top:15px;
+	margin-left:83px;
+}
+.service{
+	width:100px;
+	height:90px;
+	background-color:red;
+	float:left;
+	margin-left:1px;
+}
+#button_bar{
+	width:150px;
+	height:90px;
+	/* background-color:blue; */
+	float:left;
+	margin-top:15px;
+	margin-left:20px;
+}
+#clean{
+	width:150px;
+	height:43px;
+	background-color:red;
+	margin-top:1px;
+}
+#submit{
+	width:150px;
+	height:44px;
+	background-color:red;
+	margin-top:1px;
+}
+section{
+	width:100%;
+	height:450px;
+}
+#gmap{
+	width:100%;
+	height:450px;
+	position:absolute;
+	z-index:1;
+}
+#dashboard{
+	width:200px;
+	height:450px;
+	background-color:gray;
+	opacity:0.3;
+	position:absolute;
+	right:0px;
+	z-index:5;
+}

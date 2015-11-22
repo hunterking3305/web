@@ -1,5 +1,5 @@
 function doFirst(){
-	var area =document.getElementById('qmap');
+	var area =document.getElementById('gmap');
 	var latlng = new google.maps.LatLng(24.972,121.205);
 	var option ={
 		zoom : 14,

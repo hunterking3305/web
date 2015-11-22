@@ -3,58 +3,62 @@
  	<HEAD>
      	<meta charset="UTF-8">
 		
-		<script src="/js/mapAPI.js"></script>
-
-		<title>Main Page</title>
-		<style>
-			div#logo{
-				width:600px;
-				height:100px;
-				border:1px solid red;
-				float:left;
-				margin:5px 15px;
-			}
-			div#cart{
-				width:600px;
-				height:100px;
-				border:1px solid blue;
-				float:left;
-				margin:5px;
-			}
-			div#qmap{
-				border:1px solid yellow;
-				width:900px;
-				height:490px;
-				margin:10px;
-				float:left;
-			}
-			div#dashboard{
-				width:300px;
-				height:490px;
-				border:1px solid black;
-				margin:10px 20px;
-				float:right;
-			}
-		</style>
-	</HEAD>
-	<BODY style="overflow:hidden">
-		<header>
-			<div id="logo">
-			</div>
-			<div id="cart">
-			</div>
-		</header>
+		<link rel="stylesheet" href="css/mainPage.css">
+		<script src="js/mainPage.js"></script>
 		
-		<div id="section">
-			<div id = "qmap">
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap_mainPage.css" rel="stylesheet">
+		
+		<!-- Google API -->
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/mapAPI.js"></script>
+		
+		<title>Main Page</title>
+		
+	</HEAD>
+	<BODY>
+		<div id="big_pic">
+			<header>
+				<div id="logo">
+				<div>
+			</header>
+			<div id="selectors">
+				<div id="search_bar">
+					<input id="keying" type="text" value="Search...">
+					<div id="search_icon">
+					</div>
+				</div>
 			
-			</div>
-			
-			<div id="dashboard">
+				<div id="order_bar">
+					<div id="env" class="service">
+					</div>
+					<div class="service">
+					</div>
+					<div class="service">
+					</div>
+					<div class="service">
+					</div>
+					<div class="service">
+					</div>
+					<div class="service">
+					</div>
 				
+					
+				</div>
+				<div id="button_bar">
+					<div id="clean">
+					</div>
+					<div id="submit">
+					</div>
+				</div>
 			</div>
-		</div>
-
+			
+			<section>
+				<div id="dashboard">
+				</div>
+				<div id="gmap"></div>
+			</section>
+		</div>	
 	</BODY>
 </HTML>
 
