@@ -15,10 +15,25 @@ header{
 #logo{
 	width:120px;
 	height:40px;
-	position:absolute;
-	top:5px;
-	left:8px;
+	float:left;
+	margin:5px 5px;
 	background-color:blue;
+}
+#theme{
+	width:50%;
+	height:40px;
+	/* position:absolute;
+	top:5px;
+	left:8px; */
+	float:left;
+	margin-top:5px;
+	margin-left:16%;
+	background-color:blue;
+	text-align:center;
+}
+span{
+	font-size:35px;
+	color:white;
 }
 #selectors{
 	width:100%;
