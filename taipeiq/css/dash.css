@@ -1,0 +1,34 @@
+#dashboard{
+	width:430px;
+	height:490px;
+	background-color:white;
+	border:1px solid gray;
+	position:absolute;
+	right:0px;
+	z-index:5;
+}
+.first_lev{
+	list-style:none;
+}
+.first_lev > li{
+	color:steelblue;
+	margin-left:-20px;
+}
+.first_lev > li > a{
+	margin-left:20px;
+	font-size:28px;
+	font-family: 'Fredoka One', cursive;
+}
+.second_lev{
+	list-style:none;
+	display:inline-block;
+}
+.second_lev > li{
+	display:inline-block;
+	padding:5px;
+	margin-left:-15px;
+	margin-right:15px;
+}
+i{
+	margin-left:5px;
+}
