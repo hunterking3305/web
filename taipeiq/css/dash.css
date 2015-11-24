@@ -2,7 +2,7 @@
 	width:430px;
 	height:490px;
 	background-color:white;
-	border:1px solid gray;
+	/* border:1px solid gray; */
 	position:absolute;
 	right:0px;
 	z-index:5;
@@ -13,6 +13,7 @@
 .first_lev > li{
 	color:steelblue;
 	margin-left:-20px;
+	/* cursor:pointer; */
 }
 .first_lev > li > a{
 	margin-left:20px;
