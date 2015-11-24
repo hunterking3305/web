@@ -45,23 +45,25 @@ span{
 	opacity:0.3; */
 }
 #search_bar{
-	width:350px;
+	width:450px;
 	height:30px;
-	background-color:blue;
+	/* background-color:blue; */
 	float:left;
 	margin-top:45px;
 	margin-left:40px;
 }
 #keying{
-	width:320px;
+	width:420px;
 	height:30px;
-	
+	border-radius:10px;
 }
 #search_icon{
 	width:30px;
 	height:30px;
-	background-color:yellow;
+	border-radius:10px;
+	/* background-color:#b9b6c0; */
 	float:right;
+	cursor:pointer;
 }
 #order_bar{
 	width:607px;
@@ -69,7 +71,7 @@ span{
 	/* background-color:blue; */
 	float:left;
 	margin-top:15px;
-	margin-left:83px;
+	margin-left:63px;
 }
 .imgs{
 	width:100px;

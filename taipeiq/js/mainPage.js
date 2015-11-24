@@ -1,8 +1,11 @@
 $(document).ready(function(){
-	$('#env').click(function(){
-		$(this).slideDown();
-		$('img').fadeIn();
-		$('#content').slideToggle();
-		//$('#content').fadeIn(1000).fadeOut(2000);  //1000毫秒 , fadeIn淡入
-	});  
+	$('#keying:text').focus(function(){
+		$(this).css({
+			'background-color':'#9dceff',
+			'font':'bold 20px Tahoma'
+		});
+	});
+	$(':text').blur(function(){
+		$(this).css('background-color','#ddd');
+	});
 });
