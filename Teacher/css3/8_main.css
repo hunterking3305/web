@@ -1,0 +1,14 @@
+#box{
+	border:1px solid green;
+	width:250px;
+	margin:50px auto;
+	text-align:center;	
+	border-radius:10px;
+	
+	box-shadow:rgba(255,0,0,0.5) 10px 10px 10px;
+}
+
+#text{
+	font:bold 36px Tahoma;	
+	text-shadow:rgb(0,0,255) 3px 4px 4px;
+}

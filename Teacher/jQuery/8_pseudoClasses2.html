@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/clickMe.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				$(':button').click(function(){
+					alert('hi~');
+				});
+				$(':submit').click(function(){
+					$(this).attr('value','Please wait...');
+				});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<input type="button" value="A button">
+		<input type="button" value="A button, again">
+		<input type="submit" value="Submit">
+	</body>	
+</HTML>
+

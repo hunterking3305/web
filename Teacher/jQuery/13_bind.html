@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/addClass.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+//				$('a').css('font','bold 20px Tahoma');
+//step1			$('a').mouseenter().mouseleave();
+/*				$('a').mouseenter(function(){
+					$(this).addClass('bold');
+				}).mouseleave(function(){
+					$(this).removeClass('bold');
+				});
+
+				$('a').bind('mouseenter',function(){
+					$(this).addClass('bold');
+				}).bind('mouseleave',function(){
+					$(this).removeClass('bold');
+				});
+*/
+				$('a').bind('mouseenter mouseleave',function(){
+					$(this).toggleClass('bold');
+				});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<a href="#">A Link</a>
+	</body>	
+</HTML>
+

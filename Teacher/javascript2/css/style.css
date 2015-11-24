@@ -1,0 +1,57 @@
+body{
+	font:normal 120% Arial,Tahoma,Verdana;
+	background:#ddd;
+}
+form{
+	background:#fff;
+	border:1px solid #ccc;
+	padding:12px;
+	margin:20px auto;
+	width:280px;
+}
+fieldset{
+	border:1px solid #aaa;
+}
+legend{
+	text-align:left;
+}
+fieldset div{
+	margin:8px 0px;
+}
+label{
+	text-align:left;
+	width:80px;
+	float:left;
+}
+input{
+	border-radius:4px;
+	font-weight:bold;
+	float:left;
+}
+input[type="submit"]{
+	height:25px;
+	margin:8px;	
+	clear:both;
+}
+
+#message{
+	color:red;
+	font-size:15px;
+	
+}
+#list{
+	color:red;
+	font-size:15px;
+	border-top:1px solid #ccc;
+	clear:both;
+}
+p{
+	font-size:10px;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:1px solid #ddd;
+	padding-bottom:10px;
+}
+ol li{
+	text-align:left;
+}

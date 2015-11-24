@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/addClass.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				function changeSize(element, size){
+					var current = parseInt(element.css('font-size'));
+					//alert(current);
+	
+					if(size == 'bigger'){
+						var newSize = current - 2;
+					}else if(size == 'smaller'){
+						var newSize = current + 2;
+					}
+					element.css('font-size', newSize + 'px');
+				}
+
+
+					$('#smaller').click(function(){
+						changeSize($('p'), 'bigger');
+					});
+
+					$('#bigger').click(function(){
+						changeSize($('p'), 'smaller');
+					});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		Font size : <a href="#" id="smaller">Smaller</a> | <a href="#" id="bigger">Bigger</a>
+		<p>Some text</p>
+		<p>Some more text</p>
+		
+	</body>	
+</HTML>
+

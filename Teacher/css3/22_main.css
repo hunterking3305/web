@@ -1,0 +1,12 @@
+@keyframes slide{
+	0%{margin-left:0px;}
+	20%{margin-left:150px;}
+	50%{margin-left:500px;}
+	100%{margin-left:1000px;}
+}
+img{
+	animation-name:slide;
+	animation-duration:2s;
+	animation-iteration-count:3;
+	animation-direction:alternate;
+}

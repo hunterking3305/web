@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/form.css">
+		
+		<title>Events</title>
+	</HEAD>
+	<BODY>
+		<form action="" method="" id="theForm">
+			<fieldset>
+				<legend>Events</legend>
+				<p>Select the events you want to listen for:</p>
+				<hr>
+				<div id="events">
+					<div>
+						<input type="checkbox" name="click" value="click" id="click">
+						<label for="click">Click</label>						
+					</div>
+					<div>
+						<input type="checkbox" name="mouseover" value="mouseover" id="mouseover">
+						<label for="mouseover">Mouseover</label>						
+					</div>
+					<div>						
+						<input type="checkbox" name="keypress" value="keypress" id="keypress">
+						<label for="keypress">Keypress</label>
+					</div>
+					<div>
+						<input type="checkbox" name="contextmenu" value="contextmenu" id="contextmenu">
+						<label for="contextmenu">Contextmenu</label>
+					</div>
+					<div>
+						<input type="checkbox" name="select" value="select" id="select">
+						<label for="select">Select</label>
+					</div>
+					<div>
+						<input type="checkbox" name="focus" value="focus" id="focus">
+						<label for="focus">Focus</label>
+					</div>
+					<div>
+						<input type="submit" value="Submit" id="submit">
+					</div>
+					<hr>
+					<div>
+						<label for="result">Result : </label>
+						<textarea name="result" id="result" rows="10" disabled></textarea>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<script src="new.js"></script>
+	</BODY>
+</HTML>
+

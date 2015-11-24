@@ -1,0 +1,13 @@
+#clickMe{
+	border:3px dashed blue;
+	width:280px;
+	padding:20px;
+	font:bold 20px Tahoma;
+	margin-bottom:5px;
+}
+#content{
+	border:3px dashed blue;
+	width:280px;
+	padding:20px;
+	display:none;
+}

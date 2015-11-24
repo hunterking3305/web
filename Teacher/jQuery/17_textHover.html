@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				/* $('.hover').mousemove(function(e){
+					$('#feedback').text('x : ' + e.clientX + ' / y : ' + e.clientY);
+				}); */
+				$('.hover').mousemove(function(e){
+					var hovertext = $(this).attr('hovertext');
+					$('#hoverDiv').text(hovertext).show();
+					$('#hoverDiv').css('left', e.clientX + 10)
+								  .css('top', e.clientY + 10);
+				}).mouseout(function(){
+					$('#hoverDiv').hide();
+				 });
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<div id="hoverDiv"></div>
+		<p>
+			<a href="https://www.google.com.tw/" class="hover" hovertext="Google, a powerful search engine.">Google</a>
+		</p>
+		<p>
+			<img src="../images/washDrawing/013.JPG" border="1" class="hover" hovertext="A lovely turtle.">
+		</p>
+		<p id="feedback">	
+		</p>
+	</body>	
+</HTML>
+

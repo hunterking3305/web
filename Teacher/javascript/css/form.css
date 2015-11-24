@@ -1,0 +1,34 @@
+body{
+	font:normal 120% Tahoma,Arial,Verdana;
+	background:#ccc;
+}
+form{
+	background:#fff;
+	border:1px solid #bbb;
+	margin:30px;
+	padding:15px;
+	width:220px;
+}
+input{
+	border-radius:3px;
+	font-weight:bold;
+}
+#submit{
+	height:25px;
+	margin:8px 0px;
+}
+/*
+input[type="submit"]{
+
+}
+*/
+p{
+	color:steelblue;
+}
+textarea{
+	resize:none;
+}
+/* label{
+	float:left;
+	width:150px;
+} */

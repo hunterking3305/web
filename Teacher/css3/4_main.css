@@ -1,0 +1,16 @@
+#mother{
+	border:1px solid;
+	width:200px;
+}
+/* p:nth-child(odd){
+	color:red;
+}
+p:nth-child(even){
+	color:blue;
+} */
+
+/*negation*/
+p:not(.peter){  
+	font:bold 25px Tahoma;
+	color:steelblue;
+}

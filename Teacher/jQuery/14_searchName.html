@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/addClass.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				$('#search').keyup(function(){
+					searchName = $(this).val();
+					$('#names li').removeClass('highlight');
+					
+					if(jQuery.trim(searchName) != ''){
+						$("#names li:contains('"+searchName+"')").addClass('highlight');
+					}
+				});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<p>
+			Search : <input type="search" id="search">
+		</p>
+		<ul id="names">
+			<li>Ron Atley</li>
+			<li>Ben Whittaker</li>
+			<li>Jules Ostin</li>
+			<li>Becky Scott</li>
+			<li>Ron Cameron</li>
+		</ul>
+	</body>	
+</HTML>
+

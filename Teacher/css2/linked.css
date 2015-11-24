@@ -1,0 +1,13 @@
+h1{
+	color:green;
+	font:bold 40px Tahoma;
+	text-decoration:underline;
+}
+div{
+	font:bold 70px Comic Sans MS;
+	color:green;
+	position:absolute;
+	top:200px;
+	left:200px;
+	z-index:10;			
+}

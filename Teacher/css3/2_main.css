@@ -1,0 +1,6 @@
+p[name $= "silvia"]{
+	color:red;
+}
+p:hover{
+	color:blue;
+}

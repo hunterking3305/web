@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				/* $('.fade').click(function(){
+					$(this).fadeTo(500, 0.5, function(){
+						alert('Animation complete');
+					});
+				}); */
+				$('.fade').css('opacity', 0.5);
+				$('.fade').mouseover(function(){
+					$(this).fadeTo(300, 1);
+					$('.fade').not(this).fadeTo(300, 0.5);
+				});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		<img src="../images/bg008.gif" width="250" class="fade">
+		
+	</body>	
+</HTML>
+

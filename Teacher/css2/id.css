@@ -1,0 +1,29 @@
+
+/*for h1*/
+h1{
+	color:green;
+	font:bold 40px Tahoma;
+	text-decoration:underline;
+}
+.h1Class{
+	color:red;
+}
+#h1Id{
+	color:blue;
+}
+
+/*for div*/
+.divClass{
+	font:bold 70px Comic Sans MS;
+	color:green;
+	position:absolute;
+	top:200px;
+	left:200px;
+	z-index:10;			
+}
+#divId{
+	color:pink;
+	top:203px;
+	left:205px;
+	z-index:30;
+}

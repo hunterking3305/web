@@ -1,0 +1,7 @@
+div{
+	border-width:20px;
+	width:350px;
+	height:250px;
+	
+	border-image:url(../images/border.png) 22 repeat;
+}

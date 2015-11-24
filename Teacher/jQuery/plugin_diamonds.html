@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/diamonds.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.diamonds.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				$('#imageList').diamonds({
+					itemSelector : ".myPicture",
+					size : 350,
+					gap : 5,
+				});
+			});
+		</script>
+		<title>Diamonds</title>
+	</HEAD>
+	<BODY>
+		<h1>Diamonds Plugin</h1>
+		<div id="imageList">
+			<img class="myPicture" src="../images/washDrawing/007.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/015.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/018.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/023.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/029.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/033.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/022.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/037.JPG" width="350" height="350">
+			<img class="myPicture" src="../images/washDrawing/025.JPG" width="350" height="350">
+		</div>
+	</body>	
+</HTML>
+

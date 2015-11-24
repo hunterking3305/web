@@ -1,0 +1,16 @@
+#leftbox{
+	width:200px;
+	height:200px;
+	border:5px dashed blue;
+	float:left;
+	margin:20px;
+	padding:5px;
+}
+#rightbox{
+	width:200px;
+	height:200px;
+	border:5px dashed green;
+	float:left;
+	margin:20px;
+	padding:5px;
+}

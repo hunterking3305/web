@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src="js/jquery-ui.min.js"></script>
+		<script src=""></script>
+		<script>
+			$(document).ready(function(){
+				$('#board').hover(function(){
+					$(this).stop().animate({
+						left:'0px'
+						},
+						1000,
+						'easeInSine');
+				},
+				function(){
+					$(this).stop().animate({
+						left:'-95px'
+						},
+						1500,
+						'easeOutBounce');
+				});
+			});
+		</script>
+		<title>jQuery</title>
+	</HEAD>
+	<BODY>
+		<div id="big_wrapper">
+			<header>
+				<h1>Animate + Slide</h1>
+				<p id="animateP">Mouse over the blue stripe on the left edge.</p>
+			</header>
+			<section id="board">
+				<img src="../images/washDrawing/001.JPG" width="75" height="80">
+				<img src="../images/washDrawing/002.JPG" width="75" height="80">
+				<img src="../images/washDrawing/006.JPG" width="75" height="80">
+				<img src="../images/washDrawing/018.JPG" width="75" height="80">
+				<img src="../images/washDrawing/021.JPG" width="75" height="80">
+				<img src="../images/washDrawing/023.JPG" width="75" height="80">
+				<img src="../images/washDrawing/029.JPG" width="75" height="80">
+				<img src="../images/washDrawing/045.JPG" width="75" height="80">
+			</section>
+		</div>
+	</body>	
+</HTML>
+

@@ -1,0 +1,14 @@
+table, table tr, table td{
+	border:1px solid #000;
+}
+.highlight{
+	background:yellow;
+}
+
+.bold{
+	font:bold 20px Tahoma;
+	color:red;
+}
+ul li{
+	list-style:none;
+}
