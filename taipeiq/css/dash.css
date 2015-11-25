@@ -1,3 +1,13 @@
+#label{
+	width:450px;
+	height:50px;
+	background-color:#eea;
+	border-radius:8px;
+	position:absolute;
+	right:-430px;
+	z-index:3;
+	cursor:pointer;
+}
 #dashboard{
 	width:430px;
 	height:490px;
