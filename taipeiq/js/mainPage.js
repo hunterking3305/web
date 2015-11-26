@@ -11,18 +11,21 @@ $(document).ready(function(){
 	$(':text').blur(function(){
 		$(this).css('background-color','#ddd');
 	});
+/* Order Bar */
+	/* $('.service').sortable();
+	$('.service').disableSelection(); */
 	
 /* dashboardSlide */
-	$('#label').click(function(){
+	$('#labelin').click(function(){
 		if(count){
-			$(this).stop().animate(
+			$('#label').stop().animate(
 				{right:'0px'},
 				1500,
 				'easeOutBounce'
 			);
 			count = false;
 		}else{
-			$(this).stop().animate(
+			$('#label').stop().animate(
 				{right:'-430px'},
 				1500,
 				'easeOutBounce'
