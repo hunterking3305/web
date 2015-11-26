@@ -1,6 +1,8 @@
 count = true;
 
 $(document).ready(function(){
+/* selectors */
+	
 /* searchBar */
 	$('#keying:text').focus(function(){
 		$(this).css({
@@ -12,8 +14,8 @@ $(document).ready(function(){
 		$(this).css('background-color','#ddd');
 	});
 /* Order Bar */
-	/* $('.service').sortable();
-	$('.service').disableSelection(); */
+	$('#sortable').sortable();
+	$('#sortable').disableSelection();
 	
 /* dashboardSlide */
 	$('#labelin').click(function(){

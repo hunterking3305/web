@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>sortable</title>
+		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+
+	</HEAD>
+	<style>
+		#aaa{
+			list-style-type: none; 
+			margin: 0px; 
+			padding: 0px;
+		}
+		#bbb{ 
+			margin:0px;
+			padding:0px;
+			list-style-type: none; 
+		}
+	</style>
+	<BODY>
+		<ul id="aaa">
+			<li id="bbb">
+				<div style="width:100px; height:100px; background-color:red;"></div>
+			</li>
+			<li>
+				<div style="width:100px; height:100px; background-color:blue;"></div>
+			</li>
+		</ul>
+		<script>
+			$(function() {
+				$( "#sortable" ).sortable();
+				$( "#sortable" ).disableSelection();
+			});
+		</script>
+	</BODY>
+</HTML>

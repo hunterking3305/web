@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mainPage.css">
+		<!-- JQuary -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/mainPage.js"></script>
+		
+		<!-- Google Map API -->
+		<!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/mapAPI.js"></script> -->
+		
+		<!-- Mapbox API -->
+		<!-- <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+		<script src="js/MBmap.js"></script>
+		 -->
+		<!-- Dashboard CSS -->
+		<!-- <link rel="stylesheet" href="css/dash.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'> -->
+		
+		<title>Main Page</title>
+		<style>
+      #sortable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+      #sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+      </style>
+		<script>
+          $(function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+           });
+		</script>
+	</HEAD>
+	<BODY>
+		<div id="big_pic">
+			<div id="selectors">
+			
+				<div id="order_bar">
+					<ul id="sortable">
+						<li>
+							<div id="env" class="service">
+								<img class="imgs" src="images/env.png">
+							</div>
+						</li>
+						<li>
+							<div id="sec" class="service">
+								<img class="imgs" src="images/security.png">
+							</div>
+							
+						</li>
+						<li>
+							<div id="trf" class="service">
+								<img class="imgs" src="images/traffic.png">
+							</div>
+						</li>
+						<li>
+							<div id="shp" class="service">
+								<img class="imgs" src="images/shopping.png">
+							</div>
+						</li>
+						<li>
+							<div id="dgr" class="service">
+								<img class="imgs" src="images/disaster.png">
+							</div>
+						</li>
+						<li>
+							<div id="pub" class="service">
+								<img class="imgs" src="images/public.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="button_bar">
+					<button id="clean" type="button">Clean</button>
+					<button id="submit" type="button">Submit</button>
+				</div>
+			</div>
+		</div>
+
+	</BODY>
+</HTML>
+

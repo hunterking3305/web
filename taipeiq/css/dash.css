@@ -18,7 +18,7 @@
 }
 #dashboard{
 	width:430px;
-	height:490px;
+	height:450px;
 	background-color:white;
 	/* border:1px solid gray; */
 	position:absolute;
@@ -27,6 +27,7 @@
 }
 .first_lev{
 	list-style:none;
+	margin-top:4px;
 }
 .first_lev > li{
 	color:steelblue;
@@ -35,7 +36,7 @@
 }
 .first_lev > li > a{
 	margin-left:20px;
-	font-size:28px;
+	font-size:18px;
 	font-family: 'Fredoka One', cursive;
 }
 .second_lev{
