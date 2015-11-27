@@ -1,0 +1,156 @@
+body{
+	overflow-x:hidden;
+	/* overflow-y:hidden; */
+}
+#big_pic{
+	width:100%;
+	height:600px;
+	/* border:1px solid black; */
+	position:absolute;
+	top:0;
+	left:0;
+}
+header{
+	width:100%;
+	height:50px;
+	background-color:white;
+	position:fixed;
+	opacity:0.2;
+}
+#logo{
+	width:120px;
+	height:40px;
+	float:left;
+	margin:5px 5px;
+	background-color:blue;
+	cursor:pointer;
+}
+#theme{
+	width:50%;
+	height:40px;
+	/* position:absolute;
+	top:5px;
+	left:8px; */
+	float:left;
+	margin-top:5px;
+	margin-left:16%;
+	background-color:blue;
+	text-align:center;
+}
+span{
+	font-size:35px;
+	color:white;
+}
+#selectors{
+	width:100%;
+	height:120px;
+	position:absolute;
+	top:50px;
+	z-index:1;
+	background-color:red;
+	/* opacity:0.3; */
+}
+/* #search_bar{
+	width:455px;
+	height:30px;
+	background-color:blue;
+	float:left;
+	margin-top:45px;
+	margin-left:20px;
+}
+#keying{
+	width:420px;
+	height:30px;
+	border-radius:10px;
+}
+#search_icon{
+	width:31px;
+	height:30px;
+	border-radius:10px;
+	background-color:yellow;
+	float:right;
+	cursor:pointer;
+} */
+#order_bar{
+	width:567px;
+	height:80px;
+	background-color:gray;
+	border-radius:10px;
+	float:left;
+	margin-top:40px;
+	margin-left:33px;
+}
+#sortable{
+	list-style-type:none;
+	background-color:green;
+	width::567px;
+	height:100px;
+	margin-top:0px;
+	
+}
+#sortable > li{
+	padding:5px;
+	background-color:purple;
+	float: left;
+}
+#sortable > li > .sort_num{
+	width:70px;
+	height:70px;
+	background-color:orange;
+	text-align:center;
+}
+.service{
+	width:70px;
+	height:70px;
+	background-color:gray;
+	float:left;
+	/* margin-left:5px; */
+}
+.imgs{
+	width:60px;
+	height:60px;
+	border-radius:10px;
+	margin:5px;
+}
+#button_bar{
+	width:80px;
+	height:120px;
+	/* background-color:blue; */
+	float:left;
+	margin-top:0px;
+	margin-left:15px;
+}
+#default{
+	width:80px;
+	height:36px;
+	background-color:green;
+	margin-top:1px;
+	border-radius:10px;
+	font-size:large;
+	font-family: 'Fredoka One', cursive;
+	cursor:pointer;
+}
+#submit{
+	width:80px;
+	height:44px;
+	background-color:steelblue;
+	margin-top:1px;
+	border-radius:10px;
+	font-size:large;
+	font-family: 'Fredoka One', cursive;
+	cursor:pointer;
+}
+section{
+	width:100%;
+	height:570px;
+	background-color:gray;
+	position:absolute;
+	top:50px;
+	z-index:1px;
+}
+#gmap{
+	width:100%;
+	height:450px;
+	position:absolute;
+	z-index:1;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="css/mainPage3.css">
+		
+		<!-- JQuary -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/mainPage.js"></script>
+		
+		<!-- Google Map API -->
+		<!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/mapAPI.js"></script> -->
+		
+		<!-- Mapbox API -->
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+		<script src="js/MBmap.js"></script>
+		
+		<!-- Dashboard CSS -->
+		<link rel="stylesheet" href="css/dash.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+		
+		<title>Main Page</title>
+		
+	</HEAD>
+	<BODY>
+		<div id="big_pic">
+			<header>
+				<div id="logo">
+				</div>
+				<div id="theme">
+					<span>Main Map</span>
+				</div>
+			</header>
+			<div id="selectors">
+				<div id="order_bar">
+					<ul id="sortable">
+						<div class="sort_num">
+						<li>
+							<div id="env" class="service">
+								<img class="imgs" src="images/env.png">
+							</div>
+						</li>
+						</div>
+						<li>
+							<div class="sort_num">2</div>
+							<div id="sec" class="service">
+								<img class="imgs" src="images/security.png">
+							</div>
+							
+						</li>
+						<li>
+							<div class="sort_num">3</div>
+							<div id="trf" class="service">
+								<img class="imgs" src="images/traffic.png">
+							</div>
+						</li>
+						<li>
+							<div class="sort_num">4</div>
+							<div id="shp" class="service">
+								<img class="imgs" src="images/shopping.png">
+							</div>
+						</li>
+						<li>
+							<div class="sort_num">5</div>
+							<div id="dgr" class="service">
+								<img class="imgs" src="images/disaster.png">
+							</div>
+						</li>
+						<li>
+							<div class="sort_num">6</div>
+							<div id="pub" class="service">
+								<img class="imgs" src="images/public.png">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="button_bar">
+					<button id="default" type="button">Default</button>
+					<button id="submit" type="button">Submit</button>
+				</div>
+			</div>
+			<section>
+				<div id="label">
+					<div id="labelin"></div>
+					<div id="dashboard">
+						<ul class="first_lev">
+							<li><i class="fa fa-university fa-2x"></i><a>Public</a>
+								<ul class="second_lev">
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-hospital-o fa-2x"></i>
+										<a>Hospital</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-graduation-cap fa-2x"></i>
+										<a>School</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-futbol-o fa-2x"></i>
+										<a>Park</a>
+									</li>
+								</ul>
+							</li><br>
+							<li><i class="fa fa-rocket fa-2x"></i><a>Traffic</a>
+								<ul class="second_lev">
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-subway fa-2x"></i>
+										<a>Subway</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-bicycle fa-2x"></i>
+										<a>Bicycle</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-bus fa-2x"></i>
+										<a>Bus</a>
+									</li>
+								</ul>
+							</li><br>
+							<li><i class="fa fa-gift fa-2x"></i><a>Shopping</a>
+								<ul class="second_lev">
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-medkit fa-2x"></i>
+										<a>Pharmacy</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-shopping-bag fa-2x"></i>
+										<a>Shopping Area</a>
+									</li><br>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-shopping-cart fa-2x"></i>
+										<a>Supermarket</a>
+									</li>
+									<li>
+										<input type="checkbox">
+										<i class="fa fa-cutlery fa-2x"></i>
+										<a>Convenience Store</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i class="fa fa-shield fa-2x"></i>
+								<a>Security</a>
+							</li><br> 
+							<li>
+								<i class="fa fa-exclamation-triangle fa-2x"></i>
+								<a>Disaster</a>
+							</li><br>
+							<li>
+								<i class="fa fa-tree fa-2x"></i>
+								<a>Evirnment</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div id="gmap"></div> -->
+			</section>
+		</div>
+		<!-- <script></script> -->
+	</BODY>
+</HTML>
+
