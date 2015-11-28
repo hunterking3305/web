@@ -50,27 +50,6 @@ span{
 	background-color:red;
 	/* opacity:0.3; */
 }
-/* #search_bar{
-	width:455px;
-	height:30px;
-	background-color:blue;
-	float:left;
-	margin-top:45px;
-	margin-left:20px;
-}
-#keying{
-	width:420px;
-	height:30px;
-	border-radius:10px;
-}
-#search_icon{
-	width:31px;
-	height:30px;
-	border-radius:10px;
-	background-color:yellow;
-	float:right;
-	cursor:pointer;
-} */
 #order_bar{
 	width:567px;
 	height:80px;

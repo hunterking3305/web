@@ -1,22 +1,42 @@
-<!DOCTYPE html>
-<HTML>
-	<HEAD>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/hotMap.css">
-		<script src=""></script>
-		<title>Hot Map</title>
-	</HEAD>
-	<BODY>
-		<div id="big_pic">
-			<header>
-				<div id="logo">
-				</div>
-				<div id="theme">
-					<span>HOT MAP</span>
-				</div>
-			</header>
-			<div id="label_bar">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>動態熱圖</title>
+		<!-- Hot Map CSS -->
+		<link rel="stylesheet" href="css/hotMap2.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		
+		<!-- Hot Map Jquery -->
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/hotmap2.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+			</div>
+			<div id="theme">
+				<span>HOT MAP</span>
+			</div>
+		</header>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">hotmap1</a></li>
+				<li><a href="#tabs-2">hotmap2</a></li>
+				<li><a href="#tabs-3">hotmap3</a></li>
+			</ul>
+			<div id="tabs-1">
+				<iframe class="hotmap" name="iframe_tr" frameborder="0" src="https://leoking3305.cartodb.com/viz/d49273da-8902-11e5-916b-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</div>
+			<div id="tabs-2">
+				<iframe class="hotmap" name="iframe_tr" frameborder="0" src="https://leoking3305.cartodb.com/viz/d49273da-8902-11e5-916b-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</div>
+			<div id="tabs-3">
+				<iframe class="hotmap" name="iframe_tr" frameborder="0" src="https://leoking3305.cartodb.com/viz/d49273da-8902-11e5-916b-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 			</div>
 		</div>
-	</BODY>
-</HTML>
+	</body>
+</html>
