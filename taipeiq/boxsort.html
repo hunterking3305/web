@@ -12,33 +12,33 @@
     min-width: 520px;
   }
   .column {
-    width: 170px;
+    width: 500px;
+	height:40px;
     float: left;
-    padding-bottom: 100px;
+	background-color:red;
   }
   .portlet {
-    margin: 0 1em 1em 0;
-    padding: 0.3em;
+	width:30px;
+	height:40px;
+	float:left;
+	background-color:green;
   }
   .portlet-header {
-    padding: 0.2em 0.3em;
-    margin-bottom: 0.5em;
-    position: relative;
+	background-color:yellow;
   }
-  .portlet-toggle {
+<!--   .portlet-toggle {
     position: absolute;
     top: 50%;
     right: 0;
     margin-top: -8px;
-  }
-  .portlet-content {
-    padding: 0.4em;
-  }
-  .portlet-placeholder {
+	background-color:orange;
+  } -->
+<!--   .portlet-placeholder {
     border: 1px dotted black;
-    margin: 0 1em 1em 0;
-    height: 50px;
-  }
+	width:30px;
+	height:40px;
+	background-color:orange;
+  } -->
   </style>
   <script>
   $(function() {
@@ -66,16 +66,42 @@
 <body>
  
 <div class="column">
+  <div class="portlet">
+    <div class="portlet-header">1</div>
+  </div>
+</div>
+<div class="column">
+	<div class="portlet">
+		<div class="portlet-header">2</div>
+	</div>
+</div>
+<div class="column">
+	<div class="portlet">
+		<div class="portlet-header">3</div>
+	</div>
+</div>
+<div class="column">
+	<div class="portlet">
+		<div class="portlet-header">4</div>
+	</div>
+</div>
+<div class="column">
+	<div class="portlet">
+		<div class="portlet-header">5</div>
+	</div>
+</div>
+<div class="column">
+	<div class="portlet">
+		<div class="portlet-header">6</div>
+	</div>
+</div>
+
+<!-- <div class="column">
  
   <div class="portlet">
     <div class="portlet-header">Feeds</div>
-    <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-  <div class="portlet">
-    <div class="portlet-header">News</div>
-    <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-  </div>
  
 </div>
  
@@ -100,7 +126,7 @@
     <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
   </div>
  
-</div>
+</div> -->
  
  
 </body>
