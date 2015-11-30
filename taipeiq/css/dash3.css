@@ -1,10 +1,10 @@
 #label{
-	width:200px;
+	width:250px;
 	height:50px;
 	background-color:#eea;
 	border-radius:8px;
 	position:absolute;
-	right:-180px;
+	right:-230px;
 	z-index:3;
 	cursor:pointer;
 }
@@ -17,10 +17,10 @@
 	z-index:6;
 }
 #dashboard{
-	width:180px;
-	height:610px;
+	width:230px;
+	height:555px;
 	background-color:white;
-	/* border:1px solid gray; */
+	border:1px solid gray;
 	position:absolute;
 	right:0px;
 	z-index:5;
@@ -46,8 +46,8 @@
 	font-size:25px;
 	/* background-color:red; */
 	position:absolute;
-	left:30px;
-	/* font-family: 'Fredoka One', cursive; */
+	left:25px;
+	font-family:Verdana;
 }
 .second_lev{
 	list-style:none;

@@ -5,14 +5,14 @@ $(document).ready(function(){
 	$('#trigger_bar').click(function(){
 		if(count){
 			$('#selectors').stop().animate(
-				{left:'0px'},
+				{left:'-45px'},
 				1500,
 				'easeOutBounce'
 			);
 			count = false;
 		}else{
 			$('#selectors').stop().animate(
-				{left:'-990px'},
+				{left:'-770px'},
 				1500,
 				'easeOutBounce'
 			);
@@ -44,7 +44,7 @@ $(document).ready(function(){
 			count = false;
 		}else{
 			$('#label').stop().animate(
-				{right:'-180px'},
+				{right:'-230px'},
 				1500,
 				'easeOutBounce'
 			);

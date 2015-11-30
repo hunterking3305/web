@@ -2,11 +2,15 @@
 <HTML>
  	<HEAD>
      	<meta charset="UTF-8">
+		<!-- Google Font -->
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		
 		<link rel="stylesheet" href="css/selector2.css">
 		<link rel="stylesheet" href="css/mainPage3.css">
 		
 		<!-- Icon API -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/OTaipei_icon.png">
 		
 		<!-- JQuary -->
 		<script src="js/jquery-1.11.3.js"></script>
@@ -33,44 +37,55 @@
 	<BODY>
 		<div id="big_pic">
 			<header>
-				<div id="logo">
-				</div>
+				<img id="logo_banner" src="images/OTaipei_banner.png" onclick="javascript:location.href='homePage3.html'">
+				
 				<div id="theme">
 					<span>Main Map</span>
 				</div>
+				<div id="hotnews">
+					<img src="images/HotNews_B.png">
+					<span>Hot News</span>
+				</div>
+				<div id="hotmap" onclick="javascript:location.href='hotMap2.html'">
+					<img src="images/HotMap_B.png">
+					<span>Hot map</span>
+				</div>
 			</header>
+			
+			
+			
 			<div id="selectors">
 				<div id="order_bar">
 					<div id="num_bar">
-						<div class="num">1</div>
-						<div class="num">2</div>
-						<div class="num">3</div>
-						<div class="num">4</div>
-						<div class="num">5</div>
-						<div class="num">6</div>
+						<div id="num1" class="num">1</div>
+						<div id="num2" class="num">2</div>
+						<div id="num3" class="num">3</div>
+						<div id="num4" class="num">4</div>
+						<div id="num5" class="num">5</div>
+						<div id="num6" class="num">6</div>
 					</div>
 					<ol id="sortable">
 						
 						<li>
-							<img class="factor" src="images/env.png">
+							<img id="f1" class="factor" src="images/env.png">
 						</li>
 						
 						<li>
-							<img class="factor" src="images/disaster.png">
+							<img id="f2" class="factor" src="images/disaster.png">
 						</li>
 						<li>
-							<img class="factor" src="images/public.png">
-						</li>
-						
-						<li>
-							<img class="factor" src="images/security.png">
-						</li>
-						<li>
-							<img class="factor" src="images/shopping.png">
+							<img id="f3" class="factor" src="images/public.png">
 						</li>
 						
 						<li>
-							<img class="factor" src="images/traffic.png">
+							<img id="f4" class="factor" src="images/security.png">
+						</li>
+						<li>
+							<img id="f5" class="factor" src="images/shopping.png">
+						</li>
+						
+						<li>
+							<img id="f6" class="factor" src="images/traffic.png">
 						</li>
 					</ol>
 				</div>
@@ -78,9 +93,35 @@
 					<button id="default">Default</button>
 					<button id="submit">Submit</button>
 				</div>
+				<!-- <div id="hint_bar">
+					<span>Make Your Priority . . .</span>
+				</div> -->
 				<div id="trigger_bar">
-					<i class="fa fa-angle-double-left fa-5x"></i>
-					<i class="fa fa-angle-double-right fa-5x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i>
+					<i class="fa fa-angle-double-left fa-1x"></i><br>
+					<span>Make Your Priority. . .</span>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i>
 				</div>
 			</div>
 			<section>
@@ -88,79 +129,79 @@
 					<div id="labelin"></div>
 					<div id="dashboard">
 						<ul class="first_lev">
-							<li><i class="fa fa-university fa-2x"></i><a>公共設施</a>
+							<li><i class="fa fa-university fa-2x"></i><a>Public</a>
 								<ul class="second_lev">
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-hospital-o fa-1x"></i>
-										<a>醫院</a>
+										<a>Hospital</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-graduation-cap fa-1x"></i>
-										<a>學校</a>
+										<a>School</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-futbol-o fa-1x"></i>
-										<a>公園</a>
+										<a>Park</a>
 									</li>
 								</ul>
-							</li><br>
-							<li><i class="fa fa-rocket fa-2x"></i><a> 交通機能</a>
+							</li>
+							<li><i class="fa fa-rocket fa-2x"></i><a> Traffic</a>
 								<ul class="second_lev">
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-subway fa-1x"></i>
-										<a>捷運</a>
+										<a>MRT Station</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-bus fa-1x"></i>
-										<a>公車</a>
+										<a>Bus Stop</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-bicycle fa-1x"></i>
-										<a>腳踏車</a>
+										<a>Ubike Station</a>
 									</li>
 								</ul>
-							</li><br>
-							<li><i class="fa fa-gift fa-2x"></i><a> 購物機能</a>
+							</li>
+							<li><i class="fa fa-gift fa-2x"></i><a>Shopping</a>
 								<ul class="second_lev">
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-medkit fa-1x"></i>
-										<a>藥妝店</a>
+										<a>Pharmacy</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-shopping-bag fa-1x"></i>
-										<a>夜市商圈</a>
+										<a>Shopping Area</a>
 									</li><br>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-shopping-cart fa-1x"></i>
-										<a>大賣場</a>
+										<a>Supermarket</a>
 									</li>
 									<li>
 										<input type="checkbox">
 										<i class="fa fa-cutlery fa-1x"></i>
-										<a>便利商店</a>
+										<a>Convenience Store</a>
 									</li>
 								</ul>
-							</li><br>
+							</li>
 							<li>
 								<i class="fa fa-shield fa-2x"></i>
-								<a>生活安全</a>
-							</li><br> 
+								<a>Security</a>
+							</li><br>
 							<li>
 								<i class="fa fa-exclamation-triangle fa-2x"></i>
-								<a>環境災害</a>
+								<a>Danger Zone</a>
 							</li><br>
 							<li>
 								<i class="fa fa-tree fa-2x"></i>
-								<a>環境品質</a>
+								<a>Environment</a>
 							</li>
 						</ul>
 					</div>

@@ -1,76 +1,135 @@
 #selectors{
-	width:1100px;
-	height:100px;
-	background-color:gray;
-	border-radius:50px;
+	width:950px;
+	height:70px;
+	background-color:#d8d8d8;
+	border-radius:40px;
 	position:absolute;
 	z-index:10;
 	top:50px;
-	left:-990px;
+	left:-770px;
 }
 #order_bar{
-	width:880px;
-	height:100px;
+	width:400px;
+	height:70px;
 	/* background-color:purple; */
 	float:left;
 	margin-left:20px;
 }
 #num_bar{
-	width:880px;
+	width:680px;
 	height:20px;
 	/* background-color:green; */
 }
 .num{
-	width:100px;
-	height:20px;
+	width:50px;
+	height:15px;
 	float:left;
-	margin-left:30px;
-	margin-right:10px;
-	background-color:orange;
+	/* margin-left:30px;
+	margin-right:10px; */
+	/* background-color:orange; */
 	text-align:center;
 	font-weight:bold;
-	font-size:20px;
+	font-size:12px;
+}
+#num1{
+	margin-left:30px;
+}
+#num2{
+	margin-left:10px;
+}
+#num3{
+	margin-left:10px;
+}
+#num4{
+	margin-left:10px;
+}
+#num5{
+	margin-left:10px;
+}
+#num6{
+	margin-left:10px;
 }
 #sortable{
 	height:0px;
 	list-style-type: none;
 	margin-top:0px;
-	background-color:green;
+	/* background-color:green; */
 }
 #sortable > li{
+	width:50px;
 	float:left;
-	margin-left:-10px;
-	margin-right:50px;
+	/* background-color:red; */
+	margin-right:10px;
+}
+#f1{
+	margin-left:-12px;
+}
+#f2{
+	margin-left:-12px;
+}
+#f3{
+	margin-left:-12px;
+}
+#f4{
+	margin-left:-12px;
+}
+#f5{
+	margin-left:-12px;
+}
+#f6{
+	margin-left:-12px;
 }
 .factor{
-	width:100px;
-	height:80px;
-	
+	height:50px;
+	border-radius:10px;
+	margin-top:-5px;
 }
 #button_bar{
-	width:80px;
-	height:100px;
-	background-color:purple;
+	width:300px;
+	height:70px;
+	/* background-color:yellow; */
 	float:left;
-	margin-left:0px;
+	margin-left:10px;
 }
 #default{
-	width:80px;
+	width:150px;
 	height:50px;
+	margin-top:10px;
+	float:left;
+	border:5px solid #f1f1f1;
 	border-radius:10px;
-	background-color:red;
+	background-color:#469eb6;
+	font-size:30px;
+	font-family:'Indie Flower', cursive;
 }
 #submit{
-	width:80px;
+	width:150px;
 	height:50px;
+	margin-top:10px;
+	float:left;
 	border-radius:10px;
-	background-color:green;
+	border:5px solid #f1f1f1;
+	background-color:#469eb6;
+	font-size:30px;
+	font-family:'Indie Flower', cursive;
 }
 #trigger_bar{
-	width:110px;
-	height:100px;
+	width:180px;
+	height:70px;
 	/* background-color:purple; */
 	float:right;
 	cursor:pointer;
-	
+}
+#trigger_bar span{
+	width:180px;
+	float:left;
+	/* background-color:black; */
+	font-size:20px;
+	font-family:'Indie Flower', cursive;
+	color:steelblue;
+}
+#trigger_bar > i{
+	/* background-color:red; */
+	color:white;
+	opacity:0.5;
 }
