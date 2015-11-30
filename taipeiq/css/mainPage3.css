@@ -41,84 +41,6 @@ span{
 	font-size:35px;
 	color:white;
 }
-#selectors{
-	width:100%;
-	height:120px;
-	position:absolute;
-	top:50px;
-	z-index:1;
-	background-color:red;
-	/* opacity:0.3; */
-}
-#order_bar{
-	width:567px;
-	height:80px;
-	background-color:gray;
-	border-radius:10px;
-	float:left;
-	margin-top:40px;
-	margin-left:33px;
-}
-#sortable{
-	list-style-type:none;
-	background-color:green;
-	width::567px;
-	height:100px;
-	margin-top:0px;
-	
-}
-#sortable > li{
-	padding:5px;
-	background-color:purple;
-	float: left;
-}
-#sortable > li > .sort_num{
-	width:70px;
-	height:70px;
-	background-color:orange;
-	text-align:center;
-}
-.service{
-	width:70px;
-	height:70px;
-	background-color:gray;
-	float:left;
-	/* margin-left:5px; */
-}
-.imgs{
-	width:60px;
-	height:60px;
-	border-radius:10px;
-	margin:5px;
-}
-#button_bar{
-	width:80px;
-	height:120px;
-	/* background-color:blue; */
-	float:left;
-	margin-top:0px;
-	margin-left:15px;
-}
-#default{
-	width:80px;
-	height:36px;
-	background-color:green;
-	margin-top:1px;
-	border-radius:10px;
-	font-size:large;
-	font-family: 'Fredoka One', cursive;
-	cursor:pointer;
-}
-#submit{
-	width:80px;
-	height:44px;
-	background-color:steelblue;
-	margin-top:1px;
-	border-radius:10px;
-	font-size:large;
-	font-family: 'Fredoka One', cursive;
-	cursor:pointer;
-}
 section{
 	width:100%;
 	height:615px;
@@ -129,7 +51,7 @@ section{
 }
 #gmap{
 	width:100%;
-	height:450px;
+	height:615px;
 	position:absolute;
 	z-index:1;
 }

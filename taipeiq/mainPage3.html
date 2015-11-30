@@ -2,8 +2,11 @@
 <HTML>
  	<HEAD>
      	<meta charset="UTF-8">
-		
+		<link rel="stylesheet" href="css/selector2.css">
 		<link rel="stylesheet" href="css/mainPage3.css">
+		
+		<!-- Icon API -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		
 		<!-- JQuary -->
 		<script src="js/jquery-1.11.3.js"></script>
@@ -38,50 +41,46 @@
 			</header>
 			<div id="selectors">
 				<div id="order_bar">
-					<ul id="sortable">
-						<div class="sort_num">
+					<div id="num_bar">
+						<div class="num">1</div>
+						<div class="num">2</div>
+						<div class="num">3</div>
+						<div class="num">4</div>
+						<div class="num">5</div>
+						<div class="num">6</div>
+					</div>
+					<ol id="sortable">
+						
 						<li>
-							<div id="env" class="service">
-								<img class="imgs" src="images/env.png">
-							</div>
+							<img class="factor" src="images/env.png">
 						</li>
-						</div>
+						
 						<li>
-							<div class="sort_num">2</div>
-							<div id="sec" class="service">
-								<img class="imgs" src="images/security.png">
-							</div>
-							
-						</li>
-						<li>
-							<div class="sort_num">3</div>
-							<div id="trf" class="service">
-								<img class="imgs" src="images/traffic.png">
-							</div>
+							<img class="factor" src="images/disaster.png">
 						</li>
 						<li>
-							<div class="sort_num">4</div>
-							<div id="shp" class="service">
-								<img class="imgs" src="images/shopping.png">
-							</div>
+							<img class="factor" src="images/public.png">
+						</li>
+						
+						<li>
+							<img class="factor" src="images/security.png">
 						</li>
 						<li>
-							<div class="sort_num">5</div>
-							<div id="dgr" class="service">
-								<img class="imgs" src="images/disaster.png">
-							</div>
+							<img class="factor" src="images/shopping.png">
 						</li>
+						
 						<li>
-							<div class="sort_num">6</div>
-							<div id="pub" class="service">
-								<img class="imgs" src="images/public.png">
-							</div>
+							<img class="factor" src="images/traffic.png">
 						</li>
-					</ul>
+					</ol>
 				</div>
 				<div id="button_bar">
-					<button id="default" type="button">Default</button>
-					<button id="submit" type="button">Submit</button>
+					<button id="default">Default</button>
+					<button id="submit">Submit</button>
+				</div>
+				<div id="trigger_bar">
+					<i class="fa fa-angle-double-left fa-5x"></i>
+					<i class="fa fa-angle-double-right fa-5x"></i>
 				</div>
 			</div>
 			<section>
@@ -166,7 +165,7 @@
 						</ul>
 					</div>
 				</div>
-				<!-- <div id="gmap"></div> -->
+				<div id="gmap"></div>
 			</section>
 		</div>
 		<!-- <script></script> -->
