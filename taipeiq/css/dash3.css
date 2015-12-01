@@ -20,7 +20,7 @@
 	width:230px;
 	height:555px;
 	background-color:white;
-	border:1px solid gray;
+	/* border:1px solid gray; */
 	position:absolute;
 	right:0px;
 	z-index:5;

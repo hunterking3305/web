@@ -13,14 +13,14 @@ body{
 header{
 	width:100%;
 	height:50px;
-	background-color:white;
+	background-color:#e7e7e7;
 	position:absolute;
 	z-index:5;
 }
 #logo_banner{
 	width:160px;
 	height:40px;
-	background-color:red;
+	/* background-color:red; */
 	position:absolute;
 	top:5px;
 	left:5px;
@@ -36,12 +36,13 @@ header{
 	float:left;
 	margin-top:5px;
 	margin-left:14%;
-	background-color:blue;
+	/* background-color:blue; */
 	text-align:center;
 }
-span{
+#theme span{
 	font-size:35px;
-	color:white;
+	color:black;
+	font-family:Verdana;
 }
 #hotnews{
 	width:150px;
