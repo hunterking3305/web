@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/hotnews2.css">
+		
+		<!-- Icon API -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/OTaipei_icon.png">
+		
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/news.js"></script>
+		
+		<!-- D3.js -->
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		
+		<title>How News</title>
+		
+	</HEAD>
+	<BODY>
+		<header>
+			<img id="logo_banner" src="images/OTaipei_banner.png" onclick="javascript:location.href='homePage3.html'">
+			<div id="theme">
+				<span>Hot News</span>
+			</div>
+			<div id="mainpage" onclick="javascript:location.href='mainPage3.html'">
+				<img src="images/LifeQuality_B.png">
+				<span>Main Page</span>
+			</div>
+			<div id="hotmap" onclick="javascript:location.href='hotMap2.html'">
+				<img src="images/HotMap_B.png">
+				<span>Hot Map</span>
+			</div>
+		</header>
+		<section>
+			<div id="left_park">
+				<button id="t01" class="btn">中山區</button>
+				<button id="t02" class="btn">中正區</button>
+				<button id="t03" class="btn">松山區</button>
+				<button id="t04" class="btn">文山區</button>
+				<button id="t05" class="btn">大安區</button>
+				<button id="t06" class="btn">大同區</button>
+				<button id="t07" class="btn">士林區</button>
+				<button id="t08" class="btn">北投區</button>
+				<button id="t09" class="btn">萬華區</button>
+				<button id="t10" class="btn">信義區</button>
+				<button id="t11" class="btn">南港區</button>
+				<button id="t12" class="btn">內湖區</button>
+				<div id="face">
+					<!-- <img src="images/like.png"> -->
+					<img src="images/dislike.png">
+				</div>
+			</div>
+			<div id="cneter_park">
+			</div>
+			<div id="right_park">
+				<div id="news">
+					<svg>
+						<circle></circle>
+					</svg>
+				</div>
+				<div id="ptt">
+				</div>
+			</div>
+		</section>
+		<script>
+
+		var width = 450,
+			height = 600;
+
+		var nodes = d3.range(200).map(function() { return {radius: Math.random() * 12 + 4}; }),
+			root = nodes[0],
+			color = d3.scale.category10();
+
+		root.radius = 0;
+		root.fixed = true;
+
+		var force = d3.layout.force()
+			.gravity(0.05)
+			.charge(function(d, i) { return i ? 0 : -2000; })
+			.nodes(nodes)
+			.size([width, height]);
+
+		force.start();
+
+		var svg = d3.select("#cneter_park").append("svg")
+			.attr("width", width)
+			.attr("height", height);
+
+		svg.selectAll("circle")
+			.data(nodes.slice(1))
+		  .enter().append("circle")
+			.attr("r", function(d) { return d.radius; })
+			.style("fill", function(d, i) { return color(i % 3); });
+
+		force.on("tick", function(e) {
+		  var q = d3.geom.quadtree(nodes),
+			  i = 0,
+			  n = nodes.length;
+
+		  while (++i < n) q.visit(collide(nodes[i]));
+
+		  svg.selectAll("circle")
+			  .attr("cx", function(d) { return d.x; })
+			  .attr("cy", function(d) { return d.y; });
+		});
+
+		svg.on("mousemove", function() {
+		  var p1 = d3.mouse(this);
+		  root.px = p1[0];
+		  root.py = p1[1];
+		  force.resume();
+		});
+
+		function collide(node) {
+		  var r = node.radius + 16,
+			  nx1 = node.x - r,
+			  nx2 = node.x + r,
+			  ny1 = node.y - r,
+			  ny2 = node.y + r;
+		  return function(quad, x1, y1, x2, y2) {
+			if (quad.point && (quad.point !== node)) {
+			  var x = node.x - quad.point.x,
+				  y = node.y - quad.point.y,
+				  l = Math.sqrt(x * x + y * y),
+				  r = node.radius + quad.point.radius;
+			  if (l < r) {
+				l = (l - r) / l * .5;
+				node.x -= x *= l;
+				node.y -= y *= l;
+				quad.point.x += x;
+				quad.point.y += y;
+			  }
+			}
+			return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+		  };
+		}
+
+		</script>
+	</BODY>
+</HTML>

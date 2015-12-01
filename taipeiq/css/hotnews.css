@@ -13,6 +13,7 @@ header{
 	position:absolute;
 	top:5px;
 	left:5px;
+	cursor:pointer;
 }
 #theme{
 	width:50%;
