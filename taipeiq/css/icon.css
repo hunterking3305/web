@@ -1,0 +1,12 @@
+.model{
+	width:25px;
+	height:23px;
+	background-color:red;
+	text-align:center;
+	padding:2px;
+	border-radius:8px;
+}
+.model > i{
+	color:white;
+	font-size:22px;
+}

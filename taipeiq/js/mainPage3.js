@@ -51,7 +51,17 @@ $(document).ready(function(){
 			count = true;
 		}	
 	});
-	
+	$('input[type=checkbox]').click(function() {  
+            $("input").attr('disabled', false);  
+            if ($("input:checked").length >= 3) {  
+                $("input:checked").attr('disabled', false);
+				if($("input").not(':checked')){
+					$("input").not(':checked').attr('disabled',true);
+				}	
+            } else {  
+                
+            }  
+    }); 
 });
 
 
