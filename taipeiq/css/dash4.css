@@ -1,0 +1,97 @@
+#label{
+	width:250px;
+	height:50px;
+	background-color:#eea;
+	border-radius:8px;
+	position:absolute;
+	right:-230px;
+	z-index:3;
+	cursor:pointer;
+}
+#labelin{
+	width:20px;
+	height:50px;
+	background-color:white;
+	opacity:0.1;
+	position:absolute;
+	z-index:6;
+}
+#dashboard{
+	width:230px;
+	height:555px;
+	background-color:white;
+	/* border:1px solid gray; */
+	position:absolute;
+	right:0px;
+	z-index:5;
+}
+.first_lev{
+	list-style:none;
+	margin-top:4px;
+	margin-left:-20px;
+	cursor: default;
+}
+.first_lev > li{
+	color:steelblue;
+	margin-left:-20px;
+	/* background-color:red; */
+	/* cursor:pointer; */
+}
+.first_lev > li:not(.front_factor){
+	cursor:pointer;
+}
+.first_lev > li > i{
+	margin-left:5px;
+}
+.first_lev > li > a{
+	margin-left:20px;
+	font-weight:bold;
+	font-size:25px;
+	/* background-color:red; */
+	position:absolute;
+	left:25px;
+	font-family:Verdana;
+}
+.first_lev > li > #security_icon{
+	margin-left:10px;
+}
+.first_lev > li > #env_icon{
+	margin-left:8px;
+}
+.second_lev{
+	list-style:none;
+	display:inline-block;
+	/* background-color:red; */
+}
+.second_lev > li{
+	display:inline-block;
+	padding:5px;
+	margin-left:-35px;
+	margin-right:35px;
+	/* background-color:red; */
+}
+.second_lev > li > i{
+	margin-left:5px;
+	/* background-color:red; */
+}
+.second_lev > li > #hospy_txt {
+	margin-left:8px;
+}
+.second_lev > li > #park_txt {
+	margin-left:5px;
+}
+.second_lev > li > #mrt_txt {
+	margin-left:7px;
+}
+.second_lev > li > #bus_txt {
+	margin-left:7px;
+}
+.second_lev > li > #phy_txt {
+	margin-left:1px;
+}
+.second_lev > li > #spm_txt {
+	margin-left:1px;
+}
+.second_lev > li > #cvs_txt {
+	margin-left:2px;
+}

@@ -20,7 +20,7 @@ $(document).ready(function(){
 	});
 	
 /* TeamBar */
-	$('#team_bar').hover(function(){
+	/* $('#team_bar').hover(function(){
 		$(this).stop().animate(
 			{left:'0px'},
 			1000,
@@ -33,5 +33,10 @@ $(document).ready(function(){
 			'easeOutBounce'
 		);
 	}
+	}); */
+		$('#team_bar').hover(function(){
+		$(this).css('left','0px');
+	},function(){
+		$(this).css('left','-69px');
 	});
 });

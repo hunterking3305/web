@@ -12,7 +12,7 @@ $(document).ready(function(){
 			count = false;
 		}else{
 			$('#selectors').stop().animate(
-				{left:'-770px'},
+				{left:'-580px'},
 				1500,
 				'easeOutBounce'
 			);
