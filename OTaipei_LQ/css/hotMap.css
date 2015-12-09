@@ -9,11 +9,12 @@
 } */
 body{
 	overflow-x:hidden;
+	/* overflow-y:hidden; */
 }
 header{
 	width:100%;
 	height:50px;
-	background-color:#e7e7e7;
+	background-color:#61aeec;
 	position:absolute;
 	top:0;
 	left:0;
@@ -32,61 +33,56 @@ header{
 #theme{
 	width:50%;
 	height:40px;
-	/* position:absolute;
-	top:5px;
-	left:8px; */
 	float:left;
-	margin-top:5px;
+	margin-top:15px;
 	margin-left:14%;
 	/* background-color:blue; */
-	text-align:center;
 }
 #theme > #theme_txt{
 	font-size:35px;
-	color:black;
-	font-family:Verdana;
+	color:white;
 	/* background-color:yellow; */
-	Font-family:Meiryo;
+	Font-family:'cwTeXYen', sans-serif;
 }
 #hotnews{
 	width:150px;
 	height:50px;
-	background-color:#d8d8d8;
 	float:right;
-	margin-right:120px;
+	margin-right:10px;
 	cursor:pointer;
 }
 #hotnews > img{
-	width:50px;
-	height:50px;
+	width:30px;
+	height:30px;
 	float:left;
+	margin-top:10px;
 }
 #hotnews > span{
 	font-size:20px;
-	color:steelblue;
+	color:white;
 	float:left;
 	margin-top:15px;
-	font-family:Verdana;
+	Font-family:'cwTeXYen', sans-serif;
 }
 #mainpage{
 	width:150px;
 	height:50px;
-	background-color:#d8d8d8;
 	float:right;
 	margin-right:20px;
 	cursor:pointer;
 }
 #mainpage > img{
-	width:50px;
-	height:50px;
+	width:30px;
+	height:30px;
 	float:left;
+	margin-top:10px;
 }
 #mainpage > span{
-	font-size:19px;
-	color:steelblue;
+	font-size:20px;
+	color:white;
 	float:left;
 	margin-top:15px;
-	font-family:Verdana;
+	Font-family:'cwTeXYen', sans-serif;
 }
 #tabs{
 	width:98%;
@@ -105,6 +101,7 @@ li{
 .hotmap{
 	margin-top:-15px;
 	margin-left:-20px;
+	margin-bottom:15px;
 	width:1250px;
 	height:486px;
 	/* border:1px solid black; */

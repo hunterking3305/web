@@ -1,33 +1,41 @@
 #label{
-	width:250px;
-	height:50px;
-	background-color:#eea;
-	border-radius:8px;
+	width:195px;
+	height:30px;
+	background-color:white;
+	/* background-color:#61aeec; */
+	border-radius:5px;
 	position:absolute;
-	right:-230px;
+	right:0px;
 	z-index:3;
 	cursor:pointer;
 }
 #labelin{
-	width:20px;
-	height:50px;
-	background-color:white;
-	opacity:0.1;
+	width:30px;
+	height:30px;
 	position:absolute;
+	background-color:#3f72e9;
+	color:#61aeec;
+	font-size:27px;
+	text-align:center;
+	font-weight:bold;
+	border-radius:3px;
+	color:white;
 	z-index:6;
+	box-shadow: #555 0 0 5px;
 }
 #dashboard{
-	width:230px;
+	width:165px;
 	height:555px;
 	background-color:white;
 	/* border:1px solid gray; */
 	position:absolute;
 	right:0px;
 	z-index:5;
+	box-shadow: #555 0 0 10px; 
 }
 .first_lev{
 	list-style:none;
-	margin-top:4px;
+	margin-top:5px;
 	margin-left:-20px;
 	cursor: default;
 }
@@ -42,15 +50,17 @@
 }
 .first_lev > li > i{
 	margin-left:5px;
+	/* background-color:red; */
 }
 .first_lev > li > a{
 	margin-left:20px;
+	margin-top:10px;
 	font-weight:bold;
-	font-size:25px;
+	font-size:20px;
 	/* background-color:red; */
 	position:absolute;
 	left:25px;
-	font-family:Verdana;
+	Font-family:'cwTeXYen', sans-serif;
 }
 .first_lev > li > #security_icon{
 	margin-left:10px;
@@ -68,6 +78,7 @@
 	padding:5px;
 	margin-left:-35px;
 	margin-right:35px;
+	Font-family:'cwTeXYen', sans-serif;
 	/* background-color:red; */
 }
 .second_lev > li > i{

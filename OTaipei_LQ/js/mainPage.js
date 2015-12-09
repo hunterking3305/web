@@ -1,5 +1,5 @@
 count = true;
-
+moudel1 = false;
 $(document).ready(function(){
 /* selectors */
 	$('#trigger_bar').click(function(){
@@ -12,7 +12,7 @@ $(document).ready(function(){
 			count = false;
 		}else{
 			$('#selectors').stop().animate(
-				{left:'-580px'},
+				{left:'-610px'},
 				1500,
 				'easeOutBounce'
 			);
@@ -35,22 +35,23 @@ $(document).ready(function(){
 	
 /* dashboardSlide */
 	$('#labelin').click(function(){
-		if(count){
+		if(moudel1){
 			$('#label').stop().animate(
 				{right:'0px'},
 				1500,
 				'easeOutBounce'
 			);
-			count = false;
+			moudel1 = false;
 		}else{
 			$('#label').stop().animate(
-				{right:'-230px'},
+				{right:'-160px'},
 				1500,
 				'easeOutBounce'
 			);
-			count = true;
+			moudel1 = true;
 		}	
 	});
+	
 	$('input[type=checkbox]').click(function() {  
             $("input").attr('disabled', false);  
             if ($("input:checked").length >= 3) {  

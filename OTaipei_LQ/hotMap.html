@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<title>OTaipei | 動態熱圖</title>
 		
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/earlyaccess/cwtexyen.css' rel='stylesheet' type='text/css'>
+		
 		<!-- Hot Map CSS -->
 		<link rel="stylesheet" href="css/hotMap.css">
 		<link rel="stylesheet" href="css/jquery-ui.css">
@@ -19,18 +22,18 @@
 	</head>
 	<body>
 		<header>
-			<img id="logo_banner" src="images/OTaipei_banner.png" onclick="javascript:location.href='homePage3.html'">
+			<img id="logo_banner" src="images/OTaipei_banner.png" onclick="javascript:location.href='homePage.html'">
 			
 			<div id="theme">
 				<span id="theme_txt">動態地圖</span>
 			</div>
 			<div id="hotnews" onclick="javascript:location.href='hotNews.html'">
-				<img src="images/HotNews_B.png">
-				<span>Hot News</span>
+				<img src="images/OTaipei_Icon-19.png">
+				<span>地方大事</span>
 			</div>
-			<div id="mainpage" onclick="javascript:location.href='mainPage3.html'">
-				<img src="images/LifeQuality_B.png">
-				<span>Main Page</span>
+			<div id="mainpage" onclick="javascript:location.href='mainPage.html'">
+				<img src="images/OTaipei_Icon-20.png">
+				<span>生活品質</span>
 			</div>
 		</header>
 		<div id="tabs">
@@ -38,15 +41,23 @@
 				<li><a href="#tabs-1">hotmap1</a></li>
 				<li><a href="#tabs-2">hotmap2</a></li>
 				<li><a href="#tabs-3">hotmap3</a></li>
+				<li><a href="#tabs-4">hotmap4</a></li>
+				<li><a href="#tabs-5">hotmap5</a></li>
 			</ul>
 			<div id="tabs-1">
-				<iframe class="hotmap" name="iframe_tr" frameborder="0" src="https://leoking3305.cartodb.com/viz/d49273da-8902-11e5-916b-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				<iframe class="hotmap" frameborder="0" src="https://ivan6062.cartodb.com/viz/b9b95388-9d95-11e5-830b-0e31c9be1b51/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 			</div>
 			<div id="tabs-2">
-				<iframe class="hotmap" style="border:none;" src="https://www.google.com/maps/d/embed?mid=zMOkXj5HHFRg.kGigD3CX--dQ"></iframe>
+				<iframe class="hotmap" frameborder="0" src="https://ivan6062.cartodb.com/viz/fe0f0b36-9da9-11e5-be7d-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 			</div>
 			<div id="tabs-3">
-				<iframe class="hotmap" style="border:none;" frameborder="0" src="https://wingdern1019.cartodb.com/viz/38fc775e-97e4-11e5-b8a2-0e5db1731f59/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				<iframe class="hotmap" frameborder="0" src="https://wingdern1019.cartodb.com/viz/38fc775e-97e4-11e5-b8a2-0e5db1731f59/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</div>
+			<div id="tabs-4">
+				<iframe class="hotmap" frameborder="0" src="https://ivan6062.cartodb.com/viz/4be828b0-9d73-11e5-b897-0ecd1babdde5/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</div>
+			<div id="tabs-5">
+				<iframe class="hotmap" frameborder="0" src="https://ivan6062.cartodb.com/viz/b43c4efc-9d80-11e5-84da-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 			</div>
 		</div>
 	</body>
