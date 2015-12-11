@@ -23,6 +23,10 @@
 	z-index:6;
 	box-shadow: #555 0 0 5px;
 }
+#labelin > #imgbtn{
+	width:30px;
+	height:30px;
+}
 #dashboard{
 	width:165px;
 	height:555px;
@@ -35,25 +39,34 @@
 }
 .first_lev{
 	list-style:none;
-	margin-top:5px;
+	margin-top:15px;
 	margin-left:-20px;
 	cursor: default;
 }
 .first_lev > li{
 	color:steelblue;
-	margin-left:-20px;
+	width:170px;
+	margin-left:-15px;
 	/* background-color:red; */
 	/* cursor:pointer; */
 }
 .first_lev > li:not(.front_factor){
+	transform: translateZ(0);
+	transition-duration: 0.3s;
+	transition-property: color, background-color;
 	cursor:pointer;
+}
+.first_lev > li:not(.front_factor):hover{
+	background-color: #2098d1;
+	width:155px;
+	color: white;
 }
 .first_lev > li > i{
 	margin-left:5px;
 	/* background-color:red; */
 }
 .first_lev > li > a{
-	margin-left:20px;
+	margin-left:30px;
 	margin-top:10px;
 	font-weight:bold;
 	font-size:20px;
@@ -76,7 +89,7 @@
 .second_lev > li{
 	display:inline-block;
 	padding:5px;
-	margin-left:-35px;
+	margin-left:-30px;
 	margin-right:35px;
 	Font-family:'cwTeXYen', sans-serif;
 	/* background-color:red; */
@@ -85,8 +98,11 @@
 	margin-left:5px;
 	/* background-color:red; */
 }
-.second_lev > li > #hospy_txt {
+.second_lev > li > #plushospy{
 	margin-left:8px;
+}
+.second_lev > li > #hospy_txt {
+	margin-left:5px;
 }
 .second_lev > li > #park_txt {
 	margin-left:5px;

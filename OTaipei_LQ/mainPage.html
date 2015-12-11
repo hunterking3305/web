@@ -46,11 +46,13 @@
 				</div>
 				<div id="hotnews" onclick="javascript:location.href='hotNews.html'">
 					<img src="images/OTaipei_Icon-19.png">
-					<span>地方大事</span>
+					<span id="news_span_bar">地方大事</span><br>
+					<p id="btm_cor_news"><p>
 				</div>
 				<div id="hotmap" onclick="javascript:location.href='hotMap.html'">
 					<img src="images/OTaipei_Icon-18.png">
-					<span>動態地圖</span>
+					<span id="hot_span_bar">動態地圖</span><br>
+					<p id="btm_cor_hot"><p>
 				</div>
 			</header>
 			
@@ -67,25 +69,27 @@
 					<ol id="sortable">
 						
 						<li id="o1">
-							<img id="f1" class="factor" src="images/env.png">
+							<img id="f1" class="factor" src="images/public.png">
 						</li>
 						
 						<li id="o2">
-							<img id="f2" class="factor" src="images/disaster.png">
+							<img id="f2" class="factor" src="images/env.png">
 						</li>
+						
 						<li id="o3">
-							<img id="f3" class="factor" src="images/public.png">
+							<img id="f3" class="factor" src="images/traffic.png">
 						</li>
 						
 						<li id="o4">
-							<img id="f4" class="factor" src="images/security.png">
+							<img id="f4" class="factor" src="images/disaster.png">
 						</li id="o1">
+						
 						<li id="o5">
 							<img id="f5" class="factor" src="images/shopping.png">
 						</li>
 						
 						<li id="o6">
-							<img id="f6" class="factor" src="images/traffic.png">
+							<img id="f6" class="factor" src="images/security.png">
 						</li>
 					</ol>
 				</div>
@@ -94,31 +98,35 @@
 					<button id="submit">送出</button>
 				</div>
 				<div id="trigger_bar">
+					<!-- <i class="fa fa-angle-double-left fa-1x"></i>
 					<i class="fa fa-angle-double-left fa-1x"></i>
 					<i class="fa fa-angle-double-left fa-1x"></i>
 					<i class="fa fa-angle-double-left fa-1x"></i>
 					<i class="fa fa-angle-double-left fa-1x"></i>
-					<i class="fa fa-angle-double-left fa-1x"></i>
-					<i class="fa fa-angle-double-left fa-1x"></i><br>
-					<a>構面排序</a><br>
+					<i class="fa fa-angle-double-left fa-1x"></i><br> -->
+					<a>優先順序</a>
+					<i id="direct" class="fa fa-angle-double-right fa-1x"></i>
+					<!-- <i class="fa fa-angle-double-right fa-1x"></i>
 					<i class="fa fa-angle-double-right fa-1x"></i>
 					<i class="fa fa-angle-double-right fa-1x"></i>
 					<i class="fa fa-angle-double-right fa-1x"></i>
 					<i class="fa fa-angle-double-right fa-1x"></i>
-					<i class="fa fa-angle-double-right fa-1x"></i>
-					<i class="fa fa-angle-double-right fa-1x"></i>
+					<i class="fa fa-angle-double-right fa-1x"></i> -->
 				</div>
 			</div>
 			<section>
 				<div id="label">
-					<div id="labelin">+</div>
+					<!-- <div id="labelin">+</div> -->
+					<div id="labelin">
+						<img id="imgbtn" src="images/minus.png" class="minus">
+					</div>
 					<div id="dashboard">
 						<ul class="first_lev">
-							<li class="front_factor"><i class="fa fa-university fa-2x"></i><a>公共機能</a>
+							<li class="front_factor"><i class="fa fa-university fa-2x"></i><a>公共設施</a>
 								<ul class="second_lev">
 									<li>
 										<input name="public_loc" value=1 type="checkbox">
-										<i class="fa fa-hospital-o fa-1x"></i>
+										<i id="plushospy" class="fa fa-plus-square fa-1x"></i>
 										<a id="hospy_txt">醫院</a>
 									</li>
 									<li>
@@ -156,7 +164,7 @@
 								<ul class="second_lev">
 									<li>
 										<input name="shopping_loc" value=1 type="checkbox">
-										<i class="fa fa-medkit fa-1x"></i>
+										<i class="fa fa-suitcase fa-1x"></i>
 										<a id="phy_txt">連鎖藥妝</a>
 									</li>
 									<li>
@@ -178,11 +186,11 @@
 							</li>
 							<li class="back_factor">
 								<i id="security_icon" class="fa fa-shield fa-2x"></i>
-								<a onclick="javascript:location.href='hotMap.html.#tabs-1'">安全機能</a>
+								<a onclick="javascript:location.href='hotMap.html.#tabs-1'">生活安全</a>
 							</li><br>
 							<li class="back_factor">
 								<i class="fa fa-exclamation-triangle fa-2x"></i>
-								<a onclick="javascript:location.href='hotMap.html.#tabs-2'">生活災害</a>
+								<a onclick="javascript:location.href='hotMap.html.#tabs-2'">環境災害</a>
 							</li><br>
 							<li class="back_factor">
 								<i id="env_icon" class="fa fa-tree fa-2x"></i>
