@@ -72,7 +72,7 @@ header{
 	border-radius:3px;
 	background-color:white;
 	margin-top:-18px;
-	transition: width 1.5s;
+	transition: width 0.5s;
 }
 #hotnews:hover #btm_cor_news{
 	width:110px;
@@ -105,7 +105,7 @@ header{
 	background-color:white;
 	margin-top:-18px;
 	transition-property:width;
-	transition-duration:1.5s;
+	transition-duration:0.5s;
 	border-radius:3px;
 }
 #hotmap:hover #btm_cor_hot{

@@ -12,6 +12,17 @@
 	left:-580px;
 	/* left:0px; */
 }
+#hoverDiv{
+	border:1px solid #aaa;
+	/* color:#505050; */
+	color:#61aeec;
+	background:#fff;
+	padding:5px;
+	display:none;
+	position:absolute;
+	Font-family:'cwTeXYen', sans-serif;
+	border-radius:5px;
+}
 #order_bar{
 	width:400px;
 	height:70px;
@@ -201,8 +212,8 @@
 	
 }
 #trigger_bar > i{
-	margin-top:16px;
-	margin-left:15px;
+	margin-top:7px;
+	margin-left:10px;
 	/* background-color:red; */
 	color:#61aeec;
 	/* opacity:0.5; */

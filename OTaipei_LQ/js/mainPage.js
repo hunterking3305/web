@@ -1,20 +1,6 @@
 count = true;
 moudel1 = false;
 $(document).ready(function(){
-/* header */
-	$('#hotmap').hover(function(){
-		$('#btm_cor_hot').stop().animate(
-			{left:'-150px'},
-			1000,
-			'easeInSine'
-		);
-	},function(){
-		$('#btm_cor_hot').stop().animate(
-			{left:'0px'},
-			1000,
-			'easeOutBounce'
-		);
-	});
 /* selectors */
 	/* selector 滑進滑出 */
 	$('#trigger_bar').click(function(){
@@ -35,14 +21,26 @@ $(document).ready(function(){
 		}	
 	});
 	
+	/* selector 說明 */
+	$('.factor').mouseover(function(e){
+		var hover_txt = $(this).attr('hover_txt');
+		$('#hoverDiv').text(hover_txt).show();
+		$('#hoverDiv').css('left', e.clientX + 50)
+					  .css('top', e.clientY - 100);
+	}).mouseout(function(){
+		$('#hoverDiv').hide();
+	});
+	
+	
+	
 	/* 《 & 》轉換 */
 	$('#trigger_bar').click(function(){
-		if($('#direct').attr('class') == 'fa fa-angle-double-right fa-1x'){
+		if($('#direct').attr('class') == 'fa fa-angle-double-right fa-2x'){
 			$('#direct').removeClass();
-			$('#direct').addClass('fa fa-angle-double-left fa-1x');
+			$('#direct').addClass('fa fa-angle-double-left fa-2x');
 		}else{
 			$('#direct').removeClass();
-			$('#direct').addClass('fa fa-angle-double-right fa-1x');
+			$('#direct').addClass('fa fa-angle-double-right fa-2x');
 		}
 		
 	});

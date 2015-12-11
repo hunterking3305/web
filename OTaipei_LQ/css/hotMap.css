@@ -9,7 +9,7 @@
 } */
 body{
 	overflow-x:hidden;
-	/* overflow-y:hidden; */
+	overflow-y:hidden;
 }
 header{
 	width:100%;
@@ -71,7 +71,7 @@ header{
 	margin-top:0px;
 	border-radius:3px;
 	transition-property:width;
-	transition-duration:1.5s;
+	transition-duration:0.5s;
 }
 #hotnews:hover #btm_cor_news{
 	width:110px;
@@ -103,7 +103,7 @@ header{
 	margin-top:0px;
 	border-radius:3px;
 	transition-property:width;
-	transition-duration:1.5s;
+	transition-duration:0.5s;
 }
 #mainpage:hover #btm_cor_lq{
 	width:110px;
@@ -126,10 +126,9 @@ li{
 	Font-family:'cwTeXYen', sans-serif;
 }
 .hotmap{
-	margin-top:-15px;
-	margin-left:-20px;
-	margin-bottom:15px;
-	width:1235px;
-	height:484px;
-	/* border:1px solid black; */
+	margin-top:-16px;
+	margin-left:-25px;
+	width:1255px;
+	height:495px;
+/* 	border:1px solid black; */
 }

@@ -54,7 +54,7 @@ header{
 	background-color:white;
 	margin-top:0px;
 	border-radius:3px;
-	transition-duration:1.5s;
+	transition-duration:0.5s;
 	transition-property:width;
 }
 #mainpage:hover #btm_cor_lq{
@@ -86,7 +86,7 @@ header{
 	background-color:white;
 	margin-top:0px;
 	border-radius:3px;
-	transition-duration:1.5s;
+	transition-duration:0.5s;
 	transition-property:width;
 }
 #hotmap:hover #btm_cor_hot{

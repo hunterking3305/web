@@ -8,9 +8,9 @@
 		<script src=""></script>
 		<script>
 			$(document).ready(function(){
-				/* $('.hover').mousemove(function(e){
+				/*$('.hover').mousemove(function(e){
 					$('#feedback').text('x : ' + e.clientX + ' / y : ' + e.clientY);
-				}); */
+				});*/
 				$('.hover').mousemove(function(e){
 					var hovertext = $(this).attr('hovertext');
 					$('#hoverDiv').text(hovertext).show();
@@ -18,7 +18,7 @@
 								  .css('top', e.clientY + 10);
 				}).mouseout(function(){
 					$('#hoverDiv').hide();
-				 });
+				});
 			});
 		</script>
 		<title>jQuery</title>
