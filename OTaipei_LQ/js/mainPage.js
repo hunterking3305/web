@@ -25,8 +25,8 @@ $(document).ready(function(){
 	$('.factor').mouseover(function(e){
 		var hover_txt = $(this).attr('hover_txt');
 		$('#hoverDiv').text(hover_txt).show();
-		$('#hoverDiv').css('left', e.clientX + 50)
-					  .css('top', e.clientY - 100);
+		$('#hoverDiv').css('left', e.clientX + 40)
+					  .css('top', e.clientY - 110);
 	}).mouseout(function(){
 		$('#hoverDiv').hide();
 	});
